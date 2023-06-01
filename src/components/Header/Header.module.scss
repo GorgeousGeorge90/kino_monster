@@ -1,0 +1,16 @@
+
+.container {
+  @apply flex flex-col justify-center items-center max-w-screen-xl h-32 my-0 mx-auto bg-amber-600;
+
+  header {
+    @apply flex gap-2 w-full px-20;
+
+    .logo {
+
+    }
+
+    .title {
+      @apply flex flex-col justify-center items-center;
+    }
+  }
+}
