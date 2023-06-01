@@ -1,5 +1,7 @@
 import styles from './Header.module.scss';
 import logo from './img/logo.png';
+import Navbar from "./componets/Navbar";
+import Switcher from "../Switcher/Switcher";
 
 const Header = () => {
 
@@ -9,12 +11,15 @@ const Header = () => {
                 <img src={logo} alt="logo"/>
             </div>
             <div className={styles.title}>
-                <h3>MovieMonster</h3>
+                <h3><i>MovieMonster</i></h3>
                 <p>SPA about films</p>
             </div>
-            <nav>
-
-            </nav>
+            <div className={styles.nav}>
+                <Navbar/>
+            </div>
+            <div className={styles.btn}>
+                <Switcher/>
+            </div>
         </header>
     </div>)
 }

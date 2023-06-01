@@ -1,16 +1,29 @@
 
 .container {
-  @apply flex flex-col justify-center items-center max-w-screen-xl h-32 my-0 mx-auto bg-amber-600;
+  @apply flex flex-col justify-center max-w-screen-xl items-center h-32 my-0 mx-auto
+   bg-amber-400 dark:bg-amber-700;
 
   header {
-    @apply flex gap-2 w-full px-20;
-
-    .logo {
-
-    }
+    @apply flex gap-10 w-full px-20;
 
     .title {
-      @apply flex flex-col justify-center items-center;
+      @apply flex flex-col justify-center items-center text-white;
+
+      h3 {
+        @apply font-sans text-3xl;
+      }
+
+      p {
+        @apply font-serif;
+      }
+    }
+
+    .nav {
+      @apply grow self-end;
+    }
+
+    .btn {
+      @apply self-end w-20;
     }
   }
 }
