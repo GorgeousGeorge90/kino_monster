@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="add Header &amp; ratingReducer">
-      <change afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Comments/store/commentsSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/UsersRating.js" afterDir="false" />
+    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="add commentsReducer">
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/selectors/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/selectors/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/useInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/UsersRating/UsersRating.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/UsersRating/store/ratingSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ContactsPage/ContactsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/Comments.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/store/commentsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/store/commentsSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/UsersRating.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -89,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1685613084860</updated>
       <workItem from="1685613085936" duration="7298000" />
-      <workItem from="1685625493041" duration="15156000" />
+      <workItem from="1685625493041" duration="20411000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1685622428162</created>
@@ -112,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685653647146</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add commentsReducer">
+      <created>1685699184777</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685699184778</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="add Header &amp; ratingReducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Header &amp; ratingReducer" />
+    <MESSAGE value="add commentsReducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add commentsReducer" />
   </component>
 </project>

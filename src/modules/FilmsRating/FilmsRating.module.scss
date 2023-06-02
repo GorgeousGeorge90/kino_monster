@@ -1,5 +1,10 @@
 
 
+
 .container {
   @apply flex items-center justify-center;
+
+  ul {
+    @apply flex flex-col gap-2;
+  }
 }

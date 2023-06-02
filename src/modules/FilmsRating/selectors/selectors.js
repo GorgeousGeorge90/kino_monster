@@ -1,0 +1,1 @@
+export const getFilms = state => state.rating.films
