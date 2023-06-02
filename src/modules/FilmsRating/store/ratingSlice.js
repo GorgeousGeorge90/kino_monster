@@ -13,29 +13,30 @@ const ratingSlice = createSlice({
     name: 'rating',
     initialState,
     reducers: {
-        addFilm: (state,action)=> {
+        addFilm(state,action) {
+            const {film,year,rating} = action.payload
             const newFilm = {
                 id: Date.now().toString(),
-                film: action.payload.film,
-                year: action.payload.year,
-                rating: action.payload.rating,
+                film,
+                year,
+                rating,
             }
 
             state.top.push(newFilm)
         },
-        updateFilm: (state,action) => {
+        updateFilm(state,action) {
             const currentFilm = state.top.find(film => film.id === action.payload.id)
             currentFilm.film = action.payload.film
         },
-        updateYear: (state,action) => {
+        updateYear(state,action) {
             const currentFilm = state.top.find(film => film.id === action.payload.id)
             currentFilm.film = action.payload.year
         },
-        updateRating: (state,action) => {
+        updateRating(state,action) {
             const currentFilm = state.top.find(film => film.id === action.payload.id)
             currentFilm.film = action.payload.rating
         },
-        deleteFilm: (state,action)=> {
+        deleteFilm(state,action) {
             state.top.filter(item => item.id !== action.payload)
         }
     }

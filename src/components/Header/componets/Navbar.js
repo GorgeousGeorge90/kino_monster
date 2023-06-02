@@ -8,7 +8,7 @@ const Navbar = () => {
     return (<nav className={styles.navbar}>
             <ul>
                 <li><CustomLink to='/'>Film</CustomLink></li>
-                <li><CustomLink to='contacts'>Contacts</CustomLink></li>
+                <li><CustomLink to='rating'>Rating</CustomLink></li>
             </ul>
         </nav>)
 }
