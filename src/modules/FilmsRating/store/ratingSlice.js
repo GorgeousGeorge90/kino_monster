@@ -37,8 +37,7 @@ const ratingSlice = createSlice({
             currentFilm.film = action.payload.rating
         },
         deleteFilm(state,action) {
-            const currentFilm = state.films.find(film=> film.id === action.payload)
-            state.films.splice(state.films.indexOf(currentFilm),1)
+            state.films = state.films.filter(film=> film.id !== action.payload)
         }
     }
 })

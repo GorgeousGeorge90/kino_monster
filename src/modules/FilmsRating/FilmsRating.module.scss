@@ -2,7 +2,7 @@
 
 
 .container {
-  @apply flex items-center justify-center;
+  @apply flex flex-col gap-4 items-center justify-center;
 
   ul {
     @apply flex flex-col gap-2;

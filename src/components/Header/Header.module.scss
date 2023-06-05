@@ -1,13 +1,13 @@
 
 .container {
   @apply flex flex-col justify-center max-w-screen-xl items-center h-32 my-0 mx-auto
-   bg-amber-400 dark:bg-amber-700;
+   bg-gray-200 text-gray-900 dark:bg-gray-900  dark:text-gray-100;
 
   header {
     @apply flex gap-10 w-full px-20;
 
     .title {
-      @apply flex flex-col justify-center items-center text-white;
+      @apply flex flex-col justify-center items-center;
 
       h3 {
         @apply font-sans text-3xl;

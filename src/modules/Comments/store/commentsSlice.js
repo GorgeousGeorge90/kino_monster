@@ -19,12 +19,11 @@ const commentsSlice = createSlice({
                 city,
                 comment,
             }
-            state.comments.push(newUser)
 
+            state.comments.push(newUser)
         },
         deleteComment(state,action) {
-            const currentComment = state.comments.find(comment => comment.id === action.payload)
-            state.comments.splice(state.comments.indexOf(currentComment),1)
+            state.comments = state.comments.filter(comment=> comment.id !== action.payload)
         }
     }
 })

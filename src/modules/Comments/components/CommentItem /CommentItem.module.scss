@@ -1,5 +1,10 @@
 
 
 .container {
-  @apply flex;
+  @apply flex items-center justify-center gap-2 p-2 border-2 rounded-md;
+
+  .avatar {
+    @apply w-10 h-10;
+  }
+  
 }

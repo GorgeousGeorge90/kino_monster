@@ -1,0 +1,9 @@
+
+
+.container {
+  @apply flex flex-col items-center gap-2;
+
+  li {
+    @apply flex gap-2;
+  }
+}

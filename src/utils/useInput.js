@@ -5,10 +5,12 @@ const useInput = () => {
     const [value,setValue] = useState('')
 
     const onChange = e => {
-        setValue(e.current.value)
+        setValue(e.target.value)
     }
 
-    return [value,onChange]
+    const reset = () => setValue('')
+
+    return {value,onChange,reset}
 }
 
 export default useInput

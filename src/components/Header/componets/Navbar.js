@@ -1,5 +1,5 @@
 import styles from './Navbar.module.scss';
-import CustomLink from "../../../UI/CustomLink";
+import CustomLink from "../../../UI/CustomLink/CustomLink";
 
 
 const Navbar = () => {
