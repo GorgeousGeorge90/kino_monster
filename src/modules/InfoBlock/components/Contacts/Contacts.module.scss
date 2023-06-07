@@ -3,12 +3,20 @@
 .container {
   @apply flex flex-col items-center gap-2;
 
-  h3 {
-    @apply font-bold text-lg;
+  h2 {
+    @apply font-bold text-lg text-neutral-100 font-mono;
   }
 
   li {
     @apply flex gap-2;
+
+    .contacts_info {
+      @apply  font-bold text-neutral-300 font-mono;
+    }
+
+    .contacts_data {
+      @apply text-neutral-400 font-serif;
+    }
 
     a {
       @apply underline text-blue-500 decoration-blue-500 dark:text-blue-700 dark:decoration-blue-700;

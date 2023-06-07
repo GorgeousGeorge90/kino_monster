@@ -3,6 +3,11 @@
 .container {
   @apply flex gap-1.5 border-2  rounded-md p-2;
 
+  img {
+    @apply h-20;
+  }
+
+
   .btn {
     @apply cursor-pointer;
   }

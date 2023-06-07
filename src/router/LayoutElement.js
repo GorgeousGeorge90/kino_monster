@@ -8,8 +8,10 @@ const LayoutElement = () => {
     return (<>
         <Header/>
 
-        <main>
-            <Outlet/>
+        <main className={'max-w-screen-xl mx-auto dark:bg-neutral-800'}>
+            <div className={'mx-16'}>
+                <Outlet/>
+            </div>
         </main>
     </>)
 

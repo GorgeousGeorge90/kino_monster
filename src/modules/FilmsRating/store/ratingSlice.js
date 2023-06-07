@@ -21,6 +21,25 @@ export const fetchFilm = createAsyncThunk(
             return rejectWithValue(error.message)
         }
     }
+)
+
+export const getFilm = createAsyncThunk(
+    'rating/getFilm',
+    async function(id,{rejectWithValue}) {
+
+        try {
+            const response = await favFilmApi.getFilm(id)
+
+            if (response.Error) {
+                throw new Error(response.Error)
+            }
+
+            return response
+
+        } catch (error) {
+            return rejectWithValue(error.message)
+        }
+    }
 
 )
 
@@ -30,9 +49,7 @@ const setError = (state,action) => {
 }
 
 const initialState = {
-        films:[
-            {Id:1,Title:'Tenet',Year: 2021,Director:'Nolan',Rating:'9'},
-        ],
+        films:[],
         currentFilm:null,
         status: 'idle',
         error: null,
@@ -45,6 +62,9 @@ const ratingSlice = createSlice({
     reducers: {
         deleteFilm(state,action) {
             state.films = state.films.filter(film=> film.Id !== action.payload)
+        },
+        clearFilm(state) {
+            state.currentFilm = null
         }
     },
     extraReducers:(builder)=> {
@@ -54,13 +74,15 @@ const ratingSlice = createSlice({
             })
 
             .addCase(fetchFilm.fulfilled, (state,action)=> {
-                const {Title,Year,imdbID,imdbRating,Director} = action.payload
+                console.log(action.payload)
+                const {Poster,Title,Year,imdbID,imdbRating,Director} = action.payload
                 const newFilm = {
-                    Id:imdbID,
-                    Title,
-                    Year,
-                    Rating:imdbRating,
-                    Director,
+                    id:imdbID,
+                    title:Title,
+                    year:Year,
+                    rating:imdbRating,
+                    director:Director,
+                    poster:Poster,
                 }
                 state.films.push(newFilm)
                 state.status = 'fulfilled'
@@ -69,9 +91,22 @@ const ratingSlice = createSlice({
             .addCase(fetchFilm.rejected, (state,action)=> {
                 setError(state,action)
             })
+
+            .addCase(getFilm.pending, (state) => {
+                state.status = 'pending'
+            })
+
+            .addCase(getFilm.fulfilled, (state,action)=> {
+                state.currentFilm = action.payload
+                state.status = 'fulfilled'
+            })
+
+            .addCase(getFilm.rejected, (state,action)=> {
+                setError(state,action)
+            })
     }
 })
 
-export const {deleteFilm} = ratingSlice.actions
+export const {deleteFilm, clearFilm} = ratingSlice.actions
 
 export default ratingSlice.reducer

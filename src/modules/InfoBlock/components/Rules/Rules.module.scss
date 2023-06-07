@@ -3,8 +3,12 @@
 .container {
   @apply flex flex-col items-center;
 
-  h3 {
-    @apply font-bold text-lg;
+  h2 {
+    @apply font-bold text-lg text-neutral-100 font-mono;
+  }
+
+  .rules_list {
+    @apply  text-neutral-400 font-serif;
   }
 
   .icon {

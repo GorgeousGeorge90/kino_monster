@@ -4,15 +4,15 @@ import styles from './Contacts.module.scss';
 const Contacts = () => {
 
     return (<section className={styles.container}>
-            <h3><i>Contacts</i></h3>
+            <h2>Contacts</h2>
             <ul>
                 <li>
-                    <span><b>Email:</b></span>
-                    <span>Gambit47@yandex.ru</span>
+                    <span className={styles.contacts_info}>Email:</span>
+                    <span className={styles.contacts_data}>Gambit47@yandex.ru</span>
                 </li>
                 <li>
-                    <span><b>GitHub:</b></span>
-                    <span><a href='https://github.com/GorgeousGeorge90'>https://github.com/GorgeousGeorge90</a></span>
+                    <span className={styles.contacts_info}>GitHub:</span>
+                    <span className={styles.contacts_data}><a href='https://github.com/GorgeousGeorge90'>https://github.com/GorgeousGeorge90</a></span>
                 </li>
             </ul>
         </section>)
