@@ -2,6 +2,7 @@ import {configureStore} from "@reduxjs/toolkit";
 import ratingReducer from '../modules/FilmsRating/store/ratingSlice';
 import commentsReducer from '../modules/Comments/store/commentsSlice';
 import infoReducer from '../modules/InfoBlock/store/infoSlice';
+import filmsReducer from '../modules/FilmsList/store/filmsSlice';
 
 
 const store = configureStore({
@@ -9,6 +10,7 @@ const store = configureStore({
         rating: ratingReducer,
         comments: commentsReducer,
         info: infoReducer,
+        films: filmsReducer,
     }
 })
 

@@ -1,46 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="add base Comments &amp; FilmRating components">
-      <change afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentForm/CommentForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentForm/CommentForm.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/api/infoApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/selectors/selectors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/store/infoSlice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.module.scss" afterDir="false" />
+    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="add infoBlock">
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/FilmlsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/delay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CustomLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/CustomLink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/Comments/store/commentsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/store/commentsSlice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/LayoutElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/LayoutElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/selectors/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/store/infoSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/store/infoSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FilmsPage/FilmsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FilmsPage/FilmsPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/useInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/useInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -89,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules/InfoBlock/img" />
       <recent name="$PROJECT_DIR$/src/UI/CustomLink" />
       <recent name="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /img" />
       <recent name="$PROJECT_DIR$/src/components/Switcher/img" />
       <recent name="$PROJECT_DIR$/src/assets/img" />
-      <recent name="$PROJECT_DIR$/src/modules/Comments/store" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -120,7 +105,9 @@
       <option name="presentableId" value="Default" />
       <updated>1685613084860</updated>
       <workItem from="1685613085936" duration="7298000" />
-      <workItem from="1685625493041" duration="40203000" />
+      <workItem from="1685625493041" duration="45733000" />
+      <workItem from="1686064695462" duration="3353000" />
+      <workItem from="1686134966763" duration="10043000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1685622428162</created>
@@ -157,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685705858152</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add infoBlock">
+      <created>1685970878697</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685970878697</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +173,7 @@
     <MESSAGE value="add Header &amp; ratingReducer" />
     <MESSAGE value="add commentsReducer" />
     <MESSAGE value="add base Comments &amp; FilmRating components" />
-    <option name="LAST_COMMIT_MESSAGE" value="add base Comments &amp; FilmRating components" />
+    <MESSAGE value="add infoBlock" />
+    <option name="LAST_COMMIT_MESSAGE" value="add infoBlock" />
   </component>
 </project>

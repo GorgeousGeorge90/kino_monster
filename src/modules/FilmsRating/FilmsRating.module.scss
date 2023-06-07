@@ -2,7 +2,11 @@
 
 
 .container {
-  @apply flex flex-col gap-4 items-center justify-center;
+  @apply flex flex-col gap-4 items-center my-10;
+
+  h2 {
+    @apply font-mono text-lg font-bold;
+  }
 
   ul {
     @apply flex flex-col gap-2;

@@ -1,47 +1,77 @@
-import {createSlice} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+import favFilmApi from "../api/api";
+import {delay} from "../../../utils/delay";
 
+
+export const fetchFilm = createAsyncThunk(
+    'rating/fetchFilm',
+    async function (payload,{rejectWithValue}) {
+        const {title,year} = payload
+        try {
+            await delay(1000)
+            const response =  await favFilmApi.addFilm(title,year)
+
+            if (response.Error) {
+                throw new Error(response.Error)
+            }
+
+            return response
+
+        } catch (error) {
+            return rejectWithValue(error.message)
+        }
+    }
+
+)
+
+const setError = (state,action) => {
+    state.status = 'rejected'
+    state.error = action.payload
+}
 
 const initialState = {
         films:[
-            {id:1,film:'Tenet',year: 2021,rating:9},
-            {id:2,film:'Batman', year: 2023,rating:10},
-            {id:3,film:'Spider-Man',year: 2002, rating:8},
+            {Id:1,Title:'Tenet',Year: 2021,Director:'Nolan',Rating:'9'},
         ],
+        currentFilm:null,
+        status: 'idle',
+        error: null,
+
 }
 
 const ratingSlice = createSlice({
     name: 'rating',
     initialState,
     reducers: {
-        addFilm(state,action) {
-            const {film,year,rating} = action.payload
-            const newFilm = {
-                id: Date.now().toString(),
-                film,
-                year,
-                rating,
-            }
-
-            state.films.push(newFilm)
-        },
-        updateFilm(state,action) {
-            const currentFilm = state.films.find(film => film.id === action.payload.id)
-            currentFilm.film = action.payload.film
-        },
-        updateYear(state,action) {
-            const currentFilm = state.films.find(film => film.id === action.payload.id)
-            currentFilm.film = action.payload.year
-        },
-        updateRating(state,action) {
-            const currentFilm = state.films.find(film => film.id === action.payload.id)
-            currentFilm.film = action.payload.rating
-        },
         deleteFilm(state,action) {
-            state.films = state.films.filter(film=> film.id !== action.payload)
+            state.films = state.films.filter(film=> film.Id !== action.payload)
         }
+    },
+    extraReducers:(builder)=> {
+        builder
+            .addCase(fetchFilm.pending,(state)=> {
+                state.status = 'pending'
+            })
+
+            .addCase(fetchFilm.fulfilled, (state,action)=> {
+                const {Title,Year,imdbID,imdbRating,Director} = action.payload
+                const newFilm = {
+                    Id:imdbID,
+                    Title,
+                    Year,
+                    Rating:imdbRating,
+                    Director,
+                }
+                state.films.push(newFilm)
+                state.status = 'fulfilled'
+            })
+
+            .addCase(fetchFilm.rejected, (state,action)=> {
+                setError(state,action)
+            })
     }
 })
 
-export const {addFilm, updateFilm, updateYear,updateRating,deleteFilm} = ratingSlice.actions
+export const {deleteFilm} = ratingSlice.actions
 
 export default ratingSlice.reducer

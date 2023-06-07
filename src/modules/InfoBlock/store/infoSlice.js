@@ -1,11 +1,14 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import infoApi from "../api/infoApi";
+import {delay} from "../../../utils/delay";
+
 
 
 export const fetchPhrase = createAsyncThunk(
     'info/fetchPhrase',
     async function(_,{rejectWithValue}) {
         try {
+            await delay(2000)
             const response = await infoApi.getText()
 
             if (response.status !== 200) {

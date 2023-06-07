@@ -1,9 +1,11 @@
 import styles from './BaseButton.module.scss';
 
 
-const BaseButton = ({value}) => {
+const BaseButton = ({children}) => {
 
-    return (<button className={styles.btn}>{value}</button>)
+    return (<button className={styles.btn}>
+        {children}
+    </button>)
 }
 
 export default BaseButton

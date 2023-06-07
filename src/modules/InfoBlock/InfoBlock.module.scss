@@ -2,5 +2,9 @@
 
 
 .container {
-  @apply flex flex-col gap-3 mt-10;
+  @apply flex flex-col gap-3 mt-10 items-center;
+
+  img {
+    @apply object-cover  h-48 w-96 rounded-xl sepia dark:sepia-0 dark:grayscale
+  }
 }

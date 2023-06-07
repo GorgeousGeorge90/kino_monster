@@ -5,12 +5,15 @@ import styles from './FilmsRating.module.scss';
 import FilmRatingForm from "./components/FilmRatingForm/FilmRatingForm";
 
 
+
 const FilmsRating = () => {
     const films = useSelector(state=>getFilms(state))
 
+
     return ( <div className={styles.container}>
-            <h3>Top Films</h3>
+            <h2>Add New Film to Favourite</h2>
             <FilmRatingForm/>
+            <h3>Top Films</h3>
             <ul>
                 {
                     films.map(film => <FilmRatingItem key={film.id}

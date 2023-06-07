@@ -1,5 +1,6 @@
 import styles from './Rules.module.scss';
 
+
 const Rules = () => {
 
     return (<section className={styles.container}>
