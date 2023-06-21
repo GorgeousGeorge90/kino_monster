@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import infoApi from "../api/infoApi";
+import infoApi from "../api/api";
 import {delay} from "../../../utils/delay";
 
 
@@ -9,13 +9,8 @@ export const fetchPhrase = createAsyncThunk(
     async function(_,{rejectWithValue}) {
         try {
             await delay(2000)
-            const response = await infoApi.getText()
+            return  await infoApi.getText()
 
-            if (response.status !== 200) {
-                throw new Error('Request error!')
-            }
-
-            return response.data
         } catch (error) {
             return rejectWithValue(error.message)
         }
@@ -32,7 +27,6 @@ const initialState = {
     error: null,
 }
 
-
 const infoSlice = createSlice({
     name: 'info',
     initialState,
@@ -44,7 +38,7 @@ const infoSlice = createSlice({
             })
 
             .addCase(fetchPhrase.fulfilled, (state, action) => {
-                state.status = 'resolved'
+                state.status = 'fulfilled'
                 state.phrase = action.payload
             })
 
