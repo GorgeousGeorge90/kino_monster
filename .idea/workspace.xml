@@ -1,24 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="upd ratingFilms module">
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmData/FilmData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmData/FilmData.module.scss" afterDir="false" />
+    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="add filmsSlice &amp; tests cases">
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/tests/commentsReducer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/tests/componets.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/tests/selectors.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/asyncThunk.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/filmsReducer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/selectors.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsSearch.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmItem/FilmItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmItem/FilmItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmSearchForm/FilmSearchForm.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/tests/api.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/tests/asyncThunk.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/tests/componets.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/tests/searchReducer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsRating/tests/selectors.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/api.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/asyncThunk.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/components.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/infoReducer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/selectors.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /NewsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /components/NewsItem/NewsItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /components/NewsItem/NewsItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /selectors/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /store/newsSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/api.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/components.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/newsReducer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/selectors.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/thunks.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NewsPage/NewsPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Switcher/Switcher.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switcher/Switcher.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/selectors/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/FilmsRating.module.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmData/FilmData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmData/FilmData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmData/FilmData.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmData/FilmData.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmSearchForm/FilmSearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingForm/FilmRatingForm.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/components/FilmRatingItem/FilmRatingItem.module.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/selectors/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsRating/store/ratingSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsRating/store/searchSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/api/infoApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/api/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/LayoutElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/LayoutElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/selectors/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/store/infoSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/store/infoSlice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/RatingPage/RatingPage.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +85,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -60,6 +117,7 @@
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="duplicates.index" />
@@ -74,7 +132,75 @@
       <recent name="$PROJECT_DIR$/src/components/Switcher/img" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Jest.fetchPhrase tests">
+    <configuration name="fetchPhrase tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/asyncThunk.test.js" />
+      <test-names>
+        <test-name value="fetchPhrase tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="fetchPhrase tests.goal: successful case" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/asyncThunk.test.js" />
+      <test-names>
+        <test-name value="fetchPhrase tests" />
+        <test-name value="goal: successful case" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="fetchPhrase tests.goal: unsuccessful case" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/asyncThunk.test.js" />
+      <test-names>
+        <test-name value="fetchPhrase tests" />
+        <test-name value="goal: unsuccessful case" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="infoApi tests.goal: get text" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/api.test.js" />
+      <test-names>
+        <test-name value="infoApi tests" />
+        <test-name value="goal: get text" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="infoReducer tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/infoReducer.test.js" />
+      <test-names>
+        <test-name value="infoReducer tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -88,6 +214,15 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.fetchPhrase tests" />
+        <item itemvalue="Jest.fetchPhrase tests.goal: unsuccessful case" />
+        <item itemvalue="Jest.fetchPhrase tests.goal: successful case" />
+        <item itemvalue="Jest.infoApi tests.goal: get text" />
+        <item itemvalue="Jest.infoReducer tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,7 +235,22 @@
       <workItem from="1685613085936" duration="7298000" />
       <workItem from="1685625493041" duration="45733000" />
       <workItem from="1686064695462" duration="3353000" />
-      <workItem from="1686134966763" duration="20116000" />
+      <workItem from="1686134966763" duration="27373000" />
+      <workItem from="1686233391152" duration="12202000" />
+      <workItem from="1686549793770" duration="25000" />
+      <workItem from="1686550832832" duration="47000" />
+      <workItem from="1686567047853" duration="27000" />
+      <workItem from="1686567229136" duration="18000" />
+      <workItem from="1686580873979" duration="44000" />
+      <workItem from="1686752558946" duration="284000" />
+      <workItem from="1686942641947" duration="165000" />
+      <workItem from="1686942826154" duration="2301000" />
+      <workItem from="1686945226530" duration="71000" />
+      <workItem from="1686945308946" duration="65000" />
+      <workItem from="1686945406118" duration="1105000" />
+      <workItem from="1686946600764" duration="253000" />
+      <workItem from="1686951782751" duration="36070000" />
+      <workItem from="1687287249184" duration="8259000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1685622428162</created>
@@ -151,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686149072151</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add FilmData component">
+      <created>1686176482986</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686176482986</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +332,8 @@
     <MESSAGE value="add base Comments &amp; FilmRating components" />
     <MESSAGE value="add infoBlock" />
     <MESSAGE value="upd ratingFilms module" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd ratingFilms module" />
+    <MESSAGE value="add FilmData component" />
+    <MESSAGE value="add filmsSlice &amp; tests cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="add filmsSlice &amp; tests cases" />
   </component>
 </project>

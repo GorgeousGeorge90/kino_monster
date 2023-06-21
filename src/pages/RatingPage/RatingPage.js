@@ -1,15 +1,13 @@
-import FilmsRating from "../../modules/FilmsRating/FilmsRating";
-import Comments from "../../modules/Comments/Comments";
 import styles from './RatingPage.module.scss';
 import InfoBlock from "../../modules/InfoBlock/InfoBlock";
+import FilmsSearch from "../../modules/FilmsRating/FilmsSearch";
 
 
 const RatingPage = () => {
 
     return (<div className={styles.container}>
-        <FilmsRating/>
+        <FilmsSearch/>
         <InfoBlock/>
-        <Comments/>
     </div>)
 }
 

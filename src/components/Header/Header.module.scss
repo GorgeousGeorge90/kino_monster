@@ -1,28 +1,33 @@
 
 .container {
   @apply flex flex-col justify-center max-w-screen-xl items-center h-32 my-0 mx-auto
-   bg-gray-400 text-gray-900 dark:bg-neutral-900  dark:text-gray-100;
+   bg-gray-400 text-gray-900 dark:bg-neutral-900;
 
-  header {
+  .app_header {
     @apply flex gap-10 w-full px-20;
 
-    .title {
-      @apply flex flex-col justify-center items-center;
+    .header_title {
+      @apply flex flex-col justify-center items-center font-sans-serif;
 
-      h3 {
-        @apply font-sans text-3xl;
+      h1 {
+        @apply text-4xl font-bold tracking-wider dark:text-neutral-200;
       }
 
       p {
-        @apply font-serif;
+        @apply dark:text-neutral-300 text-lg;
+      }
+
+    }
+
+    .header_nav {
+      @apply grow self-end;
+
+      a {
+        @apply dark:text-neutral-200 text-lg;
       }
     }
 
-    .nav {
-      @apply grow self-end;
-    }
-
-    .btn {
+    .header_btn {
       @apply self-end w-20;
     }
   }

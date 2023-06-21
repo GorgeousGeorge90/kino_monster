@@ -1,12 +1,12 @@
 import useInput from "../../../../utils/useInput";
 import {useDispatch} from "react-redux";
-import {fetchFilm} from "../../store/ratingSlice";
-import styles from './FilmRatingForm.module.scss';
+import {clearError, fetchFilm} from "../../store/searchSlice";
+import styles from './FilmSearchForm.module.scss';
 import BaseButton from "../../../../UI/BaseButton/BaseButton";
-import {ReactComponent as AddIcon} from "../../../../assets/img/add.svg";
+import {ReactComponent as Search} from "../../img/search.svg";
 
 
-const FilmRatingForm = () => {
+const FilmSearchForm = () => {
     const dispatch = useDispatch()
     const title = useInput('')
     const year = useInput('')
@@ -20,17 +20,18 @@ const FilmRatingForm = () => {
     const handleClick = (e) => {
         e.preventDefault()
         dispatch(fetchFilm(payload))
+        dispatch(clearError())
         title.reset()
         year.reset()
     }
 
 
-    return (<form className={styles.form}
+    return (<form className={styles.search_form}
                   onSubmit={handleClick}>
         <input type="text" placeholder='Film' {...title}/>
         <input type="text" placeholder='Year' {...year}/>
-        <BaseButton children={<AddIcon height='20px' width='20px'/>}/>
+        <BaseButton children={<Search height='20px' width='20px' stroke={'white'}/>}/>
     </form>)
 }
 
-export default FilmRatingForm
+export default FilmSearchForm

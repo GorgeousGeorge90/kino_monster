@@ -6,7 +6,7 @@ import CommentForm from "./components/CommentForm/CommentForm";
 
 
 const Comments = () => {
-    const comments = useSelector(state=>getComments(state))
+    const comments = useSelector(getComments)
 
 
     return (<div className={styles.container}>

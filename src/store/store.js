@@ -1,16 +1,17 @@
 import {configureStore} from "@reduxjs/toolkit";
-import ratingReducer from '../modules/FilmsRating/store/ratingSlice';
+import searchReducer from '../modules/FilmsRating/store/searchSlice';
 import commentsReducer from '../modules/Comments/store/commentsSlice';
 import infoReducer from '../modules/InfoBlock/store/infoSlice';
 import filmsReducer from '../modules/FilmsList/store/filmsSlice';
-
+import newsReducer from '../modules/NewsList /store/newsSlice';
 
 const store = configureStore({
     reducer: {
-        rating: ratingReducer,
+        search: searchReducer,
         comments: commentsReducer,
         info: infoReducer,
         films: filmsReducer,
+        news: newsReducer,
     }
 })
 

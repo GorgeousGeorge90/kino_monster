@@ -4,16 +4,12 @@ import {delay} from "../../../utils/delay";
 
 
 export const fetchFilm = createAsyncThunk(
-    'rating/fetchFilm',
+    'search/fetchFilm',
     async function (payload,{rejectWithValue}) {
         const {title,year} = payload
         try {
             await delay(1000)
             const response =  await favFilmApi.addFilm(title,year)
-
-            if (response.Error) {
-                throw new Error(response.Error)
-            }
 
             return response
 
@@ -24,18 +20,13 @@ export const fetchFilm = createAsyncThunk(
 )
 
 export const getFilm = createAsyncThunk(
-    'rating/getFilm',
+    'search/getFilm',
     async function(id,{rejectWithValue}) {
 
         try {
             const response = await favFilmApi.getFilm(id)
 
-            if (response.Error) {
-                throw new Error(response.Error)
-            }
-
             return response
-
         } catch (error) {
             return rejectWithValue(error.message)
         }
@@ -53,15 +44,17 @@ const initialState = {
         currentFilm:null,
         status: 'idle',
         error: null,
-
 }
 
-const ratingSlice = createSlice({
-    name: 'rating',
+const searchSlice = createSlice({
+    name: 'search',
     initialState,
     reducers: {
         deleteFilm(state,action) {
             state.films = state.films.filter(film=> film.Id !== action.payload)
+        },
+        clearError(state) {
+            state.error = null
         },
         clearFilm(state) {
             state.currentFilm = null
@@ -74,12 +67,11 @@ const ratingSlice = createSlice({
             })
 
             .addCase(fetchFilm.fulfilled, (state,action)=> {
-                console.log(action.payload)
-                const {Poster,Title,Year,imdbID,imdbRating,Director} = action.payload
+                const {Poster,Title,Released,imdbID,imdbRating,Director} = action.payload
                 const newFilm = {
                     id:imdbID,
                     title:Title,
-                    year:Year,
+                    year:Released,
                     rating:imdbRating,
                     director:Director,
                     poster:Poster,
@@ -107,6 +99,6 @@ const ratingSlice = createSlice({
     }
 })
 
-export const {deleteFilm, clearFilm} = ratingSlice.actions
+export const {deleteFilm, clearFilm, clearError} = searchSlice.actions
 
-export default ratingSlice.reducer
+export default searchSlice.reducer

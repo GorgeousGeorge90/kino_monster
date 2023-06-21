@@ -6,18 +6,18 @@ import Switcher from "../Switcher/Switcher";
 const Header = () => {
 
     return (<div className={styles.container}>
-        <header>
-            <div className={styles.logo}>
+        <header className={styles.app_header}>
+            <div className={styles.header_logo}>
                 <img src={logo} alt="logo"/>
             </div>
-            <div className={styles.title}>
-                <h3><i>MovieMonster</i></h3>
+            <div className={styles.header_title}>
+                <h1>MovieMonster</h1>
                 <p>SPA about films</p>
             </div>
-            <div className={styles.nav}>
+            <div className={styles.header_nav}>
                 <Navbar/>
             </div>
-            <div className={styles.btn}>
+            <div className={styles.header_btn}>
                 <Switcher/>
             </div>
         </header>

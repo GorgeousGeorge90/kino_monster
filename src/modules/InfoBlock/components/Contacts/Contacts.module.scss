@@ -15,11 +15,12 @@
     }
 
     .contacts_data {
-      @apply text-neutral-400 font-serif;
+      @apply text-neutral-400 font-sans-serif text-lg;
     }
 
     a {
-      @apply underline text-blue-500 decoration-blue-500 dark:text-blue-700 dark:decoration-blue-700;
+      @apply underline text-blue-500 decoration-blue-500 dark:text-blue-700 dark:decoration-blue-700
+      hover:text-amber-500;
     }
 
   }

@@ -1,11 +1,6 @@
 
 
 .container {
-  @apply flex flex-col items-center font-serif;
-
-  h2 {
-
-  }
-
+  @apply flex flex-col items-center font-sans-serif text-xl dark:text-neutral-400;
 
 }

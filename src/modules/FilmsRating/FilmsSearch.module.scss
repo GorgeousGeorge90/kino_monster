@@ -1,0 +1,18 @@
+
+
+
+.container {
+  @apply flex flex-col gap-4 items-center my-10;
+
+  h2,h3 {
+    @apply font-sans-serif text-xl font-bold dark:text-neutral-300 first-letter:uppercase;
+  }
+
+  ul {
+    @apply grid grid-cols-2 grid-rows-2 gap-3;
+  }
+
+  .rating_error {
+    @apply text-red-600 text-sm font-bold font-sans-serif;
+  }
+}

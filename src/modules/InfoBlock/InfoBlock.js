@@ -14,8 +14,8 @@ const InfoBlock = () => {
     useEffect(()=> {
         dispatch(fetchPhrase())
     },[dispatch])
-    const phrase = useSelector(state=>getPhrase(state))
-    const status = useSelector(state=>getLoading(state))
+    const phrase = useSelector(getPhrase)
+    const status = useSelector(getLoading)
 
     return (<div className={styles.container}>
         <img src="https://media.istockphoto.com/id/489833698/photo/two-lounge-chairs-under-tent-on-beach.jpg?s=612x612&w=0&k=20&c=df_6Jkb5YreyaAcGVbdcRrTP4dZ-opUrYWtgRC3eKKI=" alt='img'/>

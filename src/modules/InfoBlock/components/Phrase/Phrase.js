@@ -4,7 +4,7 @@ const Phrase = ({quote,author}) => {
 
     return (<section className={styles.container}>
             <h2>{quote}</h2>
-            <p>{author}</p>
+            <p className={ 'font-bold'}>{author}</p>
         </section>)
 }
 

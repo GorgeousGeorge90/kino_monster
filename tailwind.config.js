@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         primary: 'black',
       },
+      fontFamily: {
+        'sans-serif': ['Alegreya Sans SC', 'sans-serif'],
+      },
       container: {
         center: true,
       }
