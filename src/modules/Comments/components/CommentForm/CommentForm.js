@@ -1,18 +1,15 @@
 import useInput from '../../../../utils/useInput';
-import {useDispatch} from "react-redux";
-import {addComment} from "../../store/commentsSlice";
-import styles from './CommentForm.module.scss';
+import {useDispatch} from 'react-redux';
+import {addComment} from '../../store/commentsSlice';
 
 
-const CommentForm = () => {
+const CommentForm = ({length}) => {
     const dispatch = useDispatch()
     const name = useInput()
-    const city = useInput()
     const comment = useInput()
 
     const payload = {
         name:name.value,
-        city: city.value,
         comment:comment.value,
     }
 
@@ -20,18 +17,28 @@ const CommentForm = () => {
         e.preventDefault()
         dispatch(addComment(payload))
         name.reset()
-        city.reset()
         comment.reset()
     }
 
-    return (<form onSubmit={handleClick}
-                  className={styles.form}>
-        <input type="text" placeholder='name' {...name}/>
-        <input type="text" placeholder='city' {...city}/>
-        <input type="text" placeholder='comment' {...comment}/>
-        <button>
-            +
-        </button>
+    return (<form className={'flex flex-col gap-0.5 p-4 text-sm'}
+                  onSubmit={handleClick}>
+        <input className={'h-6 rounded-t-md'}
+               type="text"
+               placeholder='comment'
+               {...comment}/>
+        {
+            comment.value ? <div className={'grid grid-cols-2 gap-0.5'}><input className={'rounded-bl-md'}
+                                    type="text"
+                                    placeholder='name'
+                                    {...name}/>
+                <button className={'first-letter:uppercase bg-neutral-500 text-neutral-200 ' +
+                    'rounded-br-md disabled:bg-red-600'}
+                        disabled={ length >= 5 || !name.value}
+                >
+                    leave comment
+                </button>
+            </div> :null
+        }
     </form>)
 }
 

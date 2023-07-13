@@ -1,11 +1,13 @@
-import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import filmsApi from "../api/api";
+import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
+import filmsApi from '../api/api';
+import {delay} from '../../../utils/delay';
 
 
 export const fetchFilms = createAsyncThunk(
     'films/fetchFilms',
     async (_,{rejectWithValue})=> {
         try {
+            await delay(2000)
             const response = await filmsApi.getFilms()
 
             return response.results
@@ -20,13 +22,20 @@ const initialState = {
     films: [],
     status:'idle',
     error:null,
+    selected:null,
 }
 
 const filmsSlice = createSlice({
     name:'films',
     initialState,
     reducers:{
-        clearError:state => {
+        selectFilm:(state,action)=> {
+            state.selected = state.films.find(film => film.id === action.payload)
+        },
+        clearSelected:(state)=> {
+            state.selected = null
+        },
+        clearError:(state) => {
             state.error = null
         }
     }
@@ -49,5 +58,5 @@ const filmsSlice = createSlice({
     })
 })
 
-export const {clearError} = filmsSlice.actions
+export const { clearError, selectFilm, clearSelected } = filmsSlice.actions
 export default filmsSlice.reducer

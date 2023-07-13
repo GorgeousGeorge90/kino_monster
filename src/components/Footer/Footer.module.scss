@@ -1,0 +1,15 @@
+
+
+
+.footer_container {
+  @apply flex items-center justify-center dark:bg-neutral-800 h-[70px];
+
+  .footer {
+    @apply grid grid-cols-[repeat(3,50px)_250px] gap-2 items-center
+    justify-center font-sans-serif;
+
+    .footer_icon {
+      @apply cursor-pointer hover:fill-amber-200 fill-neutral-200;
+    }
+  }
+}

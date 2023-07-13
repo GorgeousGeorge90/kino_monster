@@ -1,11 +1,18 @@
 import filmsReducer, {
-    clearError, fetchFilms
+    clearError,
+    selectFilm,
+    clearSelected,
+    fetchFilms
 } from '../store/filmsSlice';
 
 const initialState = {
-    films: [],
+    films: [
+        {id:'1', title:'Batman'},
+        {id:'2', title:'IronMan'},
+    ],
     status:'idle',
     error:'Error!',
+    selected:'Batman',
 }
 
 describe('filmsReducer tests',()=>{
@@ -13,6 +20,23 @@ describe('filmsReducer tests',()=>{
 
         const result = filmsReducer(initialState,({type:''}))
         expect(result).toEqual(initialState)
+    })
+
+    it('goal: select film',()=> {
+
+        const action = {
+            type:selectFilm.type,
+            payload:'2',
+        }
+
+        const result = filmsReducer(initialState,action)
+        expect(result.selected.title).toBe('IronMan')
+    })
+
+    it('goal: change selected to null',()=> {
+
+        const result = filmsReducer(initialState,({type:clearSelected.type}))
+        expect(result.selected).toBeNull()
     })
 
     it('goal: change error to null',()=> {

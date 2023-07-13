@@ -9,7 +9,7 @@ const Navbar = () => {
             <ul>
                 <li><CustomLink to='/'>Films</CustomLink></li>
                 <li><CustomLink to='news'>News</CustomLink></li>
-                <li><CustomLink to='rating'>Rating</CustomLink></li>
+                <li><CustomLink to='info'>Info</CustomLink></li>
             </ul>
         </nav>)
 }

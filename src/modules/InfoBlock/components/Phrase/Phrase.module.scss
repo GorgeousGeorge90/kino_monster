@@ -1,6 +1,13 @@
 
 
-.container {
-  @apply flex flex-col items-center font-sans-serif text-xl dark:text-neutral-400;
+.phrase_container {
+  @apply flex flex-col items-center font-sans-serif dark:text-neutral-400;
 
+  .phrase_title {
+    @apply text-base;
+  }
+
+  .phrase_author {
+    @apply text-lg font-bold;
+  }
 }

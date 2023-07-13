@@ -1,0 +1,9 @@
+
+
+.modal_overlay {
+  @apply flex items-center justify-center w-full h-full bg-neutral-200 absolute top-0 right-0;
+
+  .modal_base {
+    @apply flex items-center justify-center p-2 rounded-xl min-w-fit min-h-fit opacity-100;
+  }
+}

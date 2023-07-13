@@ -1,41 +1,51 @@
-import {
-    getFilmsState,
-    getAllFilms,
-    getFilmsError,
-    getFilmsStatus,
-} from '../selectors/selectors';
+import filmsSelectors from '../selectors/selectors';
 
 const films = {
     films: [
-        {id:'1',title:'Batman'}
+        {id:'1',title:'Batman', vote_average:6},
+        {id:'2',title:'IronMan', vote_average:5},
     ],
     status:'idle',
     error:null,
+    selected:'Batman',
 }
 
 describe('FilmsList selectors tests',()=> {
     it('goal: select films section',()=> {
 
-        const result = getFilmsState({films})
+        const result = filmsSelectors.getState({films})
         expect(result).toEqual(films)
     })
 
     it('goal: select films',()=> {
 
-        const result = getAllFilms({films})
-        expect(result).toHaveLength(1)
+        const result = filmsSelectors.getAll({films})
+        expect(result).toHaveLength(2)
         expect(result[0].title).toBe('Batman')
     })
 
     it('goal: select status',()=> {
 
-        const result = getFilmsStatus({films})
+        const result = filmsSelectors.getStatus({films})
         expect(result).toBe('idle')
     })
 
     it('goal: select error',()=> {
 
-        const result = getFilmsError({films})
+        const result = filmsSelectors.getError({films})
         expect(result).toBeNull()
+    })
+
+    it('goal: select film',()=> {
+
+        const result = filmsSelectors.getSelected({films})
+        expect(result).toBe('Batman')
+    })
+
+    it('goal: select sorted by rate films',() => {
+
+        const result = filmsSelectors.getSortedByRate()({films})
+        expect(result[0].title).toBe('IronMan')
+        expect(result[1].title).toBe('Batman')
     })
 })

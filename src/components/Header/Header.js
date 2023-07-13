@@ -6,7 +6,7 @@ import Switcher from "../Switcher/Switcher";
 const Header = () => {
 
     return (<div className={styles.container}>
-        <header className={styles.app_header}>
+        <header className={styles.header}>
             <div className={styles.header_logo}>
                 <img src={logo} alt="logo"/>
             </div>

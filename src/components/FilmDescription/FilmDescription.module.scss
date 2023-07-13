@@ -1,0 +1,46 @@
+
+
+
+.film_desc_container {
+  @apply flex flex-col items-center justify-items-center rounded-xl max-w-lg py-5;
+
+  .film_desc_content {
+    @apply flex flex-col gap-4 items-center justify-items-center;
+  }
+
+  .film_desc_header {
+    @apply flex flex-col items-center;
+
+    .film_desc_header_title {
+      @apply font-bold text-neutral-200 text-lg;
+    }
+
+    p {
+      @apply text-xs text-neutral-300;
+    }
+  }
+
+  .film_desc_main {
+    @apply grid grid-cols-2 gap-4 justify-items-center;
+
+    .film_desc_poster {
+      @apply flex gap-2 items-center;
+
+      img {
+        @apply object-cover rounded-xl w-64;
+      }
+    }
+
+    .film_desc_info {
+      @apply flex flex-col text-neutral-300 my-2;
+
+      p {
+        @apply text-xs;
+      }
+    }
+  }
+
+  .film_desc_footer {
+    @apply flex items-center justify-center
+  }
+}

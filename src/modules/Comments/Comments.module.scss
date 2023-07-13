@@ -1,5 +1,21 @@
 
 
-.container {
-  @apply flex items-center justify-center;
+.comments_container {
+  @apply flex flex-col gap-2 items-center p-5;
+
+  .comments_title {
+    @apply font-bold first-letter:uppercase text-neutral-100 text-lg;
+  }
+
+  .comments_list {
+    @apply flex flex-col gap-3;
+  }
+
+  .comments_null {
+    @apply flex flex-col items-center text-neutral-300 text-lg cursor-pointer animate-open
+    hover:before:content-[attr(data-hover)] hover:text-neutral-400 hover:text-sm;}
+
+  .comments_limit {
+    @apply first-letter:uppercase text-red-600 animate-open;
+  }
 }

@@ -1,9 +1,10 @@
-import NewsList from "../../modules/NewsList /NewsList";
+import NewsList from '../../modules/NewsList /NewsList';
+
 
 
 const NewsPage = () => {
-    return (<div>
-        News!
+
+    return (<div className={'flex flex-col'}>
         <NewsList/>
     </div>)
 }

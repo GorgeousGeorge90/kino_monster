@@ -5,7 +5,7 @@ import styles from './Switcher.module.scss';
 
 
 const Switcher = () => {
-    const [theme, setTheme] = useState('light')
+    const [theme, setTheme] = useState('dark')
 
     useLayoutEffect(()=> {
         const app = document.querySelector('#app')

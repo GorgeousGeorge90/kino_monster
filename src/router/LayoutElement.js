@@ -1,19 +1,22 @@
 import {Outlet} from 'react-router-dom';
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 
 
 const LayoutElement = () => {
 
-    return (<>
+    return (<div className={'h-screen flex flex-col'}>
         <Header/>
 
-        <main className={'max-w-screen-xl mx-auto dark:bg-neutral-800'}>
+        <main className={'dark:bg-neutral-800 flex-grow'}>
             <div className={'mx-16'}>
                 <Outlet/>
             </div>
         </main>
-    </>)
+
+        <Footer/>
+    </div>)
 
 }
 

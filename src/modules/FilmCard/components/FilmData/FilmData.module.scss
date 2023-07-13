@@ -1,0 +1,47 @@
+
+
+
+.container {
+  @apply flex items-center justify-center font-sans-serif;
+
+  .film_data_content {
+    @apply grid grid-cols-[repeat(2,200px)] grid-rows-[50px,400px] justify-center gap-2;
+
+    .film_data_header {
+      @apply flex flex-col items-center col-span-full;
+
+      .film_data_title {
+        @apply font-bold text-neutral-100 text-lg;
+      }
+
+      .film_data_year {
+        @apply  text-neutral-300 text-xs;
+      }
+    }
+
+    .film_data_left {
+      @apply flex flex-col items-start;
+
+      .film_data_scores {
+        @apply flex flex-col;
+      }
+
+      .film_data_poster {
+        @apply self-start;
+
+        img {
+          @apply object-scale-down rounded-xl;
+        }
+      }
+
+    }
+
+    .film_data_main {
+      @apply flex flex-col gap-3 font-sans-serif text-neutral-300 text-xs;
+
+      .film_data_plot {
+        @apply text-neutral-300 text-xs;
+      }
+    }
+  }
+}

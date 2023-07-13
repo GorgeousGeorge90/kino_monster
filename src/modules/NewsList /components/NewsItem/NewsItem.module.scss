@@ -4,19 +4,18 @@
 .container {
 
   .item_content {
-
+    @apply flex gap-2 items-center;
 
     .item_title {
-
+      @apply text-neutral-200 text-lg font-bold;
     }
 
     .item_link {
-
+      @apply text-neutral-300 hover:text-amber-500 hover:animate-bounce;
     }
 
     .item_source {
-
+      @apply uppercase text-neutral-200;
     }
-
   }
 }

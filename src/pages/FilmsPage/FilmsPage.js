@@ -1,10 +1,9 @@
-import FilmsList from "../../modules/FilmsList/FilmlsList";
+import FilmsList from '../../modules/FilmsList/FilmsList';
 
 
 const FilmsPage = () => {
 
-    return (<div>
-        Films
+    return (<div className={'flex flex-col min-h-screen'}>
         <FilmsList/>
     </div>)
 }

@@ -1,12 +1,12 @@
 import commentsReducer, {
     addComment,
-    deleteComment,
+    deleteComment, updateComment,
 } from '../store/commentsSlice';
 
 
 const initialState = {
     comments: [
-        {id: '1', name: 'George', city: 'Moscow', comment: 'Batman Begins is my favorite!'}
+        {id: '1', name: 'George', comment: 'Batman Begins is my favorite!'}
     ]
 }
 
@@ -22,7 +22,6 @@ describe('commentsReducer tests',()=> {
             type: addComment.type,
             payload: {
                 name:'Kate',
-                city:'Moscow',
                 comment: 'Hi!'
             }
         }
@@ -30,6 +29,19 @@ describe('commentsReducer tests',()=> {
         const result = commentsReducer(initialState,action)
         expect(result.comments.length).toBe(2)
         expect(result.comments[1].name).toBe('Kate')
+    })
+
+    it('goal:change comment text to Nope!',()=> {
+        const action = {
+            type: updateComment.type,
+            payload: {
+                id:'1',
+                text:'Nope',
+            }
+        }
+
+        const result = commentsReducer(initialState,action)
+        expect(result.comments[0].comment).toBe('Nope')
     })
 
     it('goal: delete comment', ()=> {

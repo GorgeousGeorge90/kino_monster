@@ -2,5 +2,5 @@
 
 
 .app {
-  //@apply flex flex-col items-start justify-center h-screen max-w-xl;
+  @apply flex flex-col min-h-screen font-sans-serif w-[1100px] mx-auto;
 }     

@@ -2,5 +2,6 @@
 
 
 .btn {
-  @apply p-2 text-center bg-blue-500 dark:bg-neutral-700 rounded-md text-white;
+  @apply flex p-2 items-center justify-center dark:bg-neutral-700 rounded-md text-white hover:scale-110;
 }
+

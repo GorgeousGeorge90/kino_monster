@@ -1,10 +1,25 @@
 
 
-.container {
-  @apply flex items-center justify-center gap-2 p-2 border-2 rounded-md;
+.comment_item_container {
+  @apply flex items-center gap-2  dark:bg-gray-500 rounded-full pr-2 w-fit animate-open;
 
-  .avatar {
+  .comment_item_avatar {
     @apply w-10 h-10;
   }
-  
+
+  .comment_item_name {
+    @apply text-neutral-100 text-sm font-bold;
+  }
+
+  .comment_item_content {
+    @apply text-neutral-200 text-sm;
+  }
+
+  .comment_item_input {
+    @apply border-none dark:bg-neutral-400 text-neutral-100;
+  }
+
+  .comment_item_btn {
+    @apply h-4 w-4 cursor-pointer;
+  }
 }

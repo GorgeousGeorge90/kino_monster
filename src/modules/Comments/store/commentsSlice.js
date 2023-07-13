@@ -2,9 +2,7 @@ import {createSlice} from '@reduxjs/toolkit';
 
 
 const initialState = {
-    comments: [
-        {id:1, name: 'George', city: 'Moscow', comment: 'Batman Begins is my favorite!'},
-    ]
+    comments: []
 }
 
 const commentsSlice = createSlice({
@@ -12,15 +10,18 @@ const commentsSlice = createSlice({
     initialState,
     reducers: {
         addComment(state,action) {
-            const {name, city, comment} = action.payload
+            const {name, comment} = action.payload
             const newUser = {
                 id: Date.now().toString(),
                 name,
-                city,
                 comment,
             }
 
             state.comments.push(newUser)
+        },
+        updateComment(state,action) {
+            const {id,text} = action.payload
+            state.comments.find(el => el.id === id).comment = text
         },
         deleteComment(state,action) {
             state.comments = state.comments.filter(comment=> comment.id !== action.payload)
@@ -28,6 +29,6 @@ const commentsSlice = createSlice({
     }
 })
 
-export const {addComment, deleteComment} = commentsSlice.actions
+export const {addComment,updateComment,deleteComment} = commentsSlice.actions
 
 export default commentsSlice.reducer

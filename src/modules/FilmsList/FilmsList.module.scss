@@ -1,0 +1,14 @@
+
+
+.films_list_container {
+  @apply flex flex-col flex-wrap items-center justify-center mx-16 mb-3 gap-3 font-sans-serif;
+
+  .films_list_title {
+    @apply first-letter:uppercase font-bold text-2xl dark:text-neutral-300 my-2;
+  }
+
+  .films_list_list {
+    @apply grid grid-cols-5 gap-10;
+  }
+}
+
