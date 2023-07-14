@@ -1,13 +1,13 @@
 
 
 .phrase_container {
-  @apply flex flex-col items-center font-sans-serif dark:text-neutral-400;
+  @apply flex flex-col items-center font-sans-serif animate-open;
 
   .phrase_title {
-    @apply text-base;
+    @apply text-base dark:text-neutral-300 ;
   }
 
   .phrase_author {
-    @apply text-lg font-bold;
+    @apply text-lg font-bold dark:text-neutral-200 ;
   }
 }

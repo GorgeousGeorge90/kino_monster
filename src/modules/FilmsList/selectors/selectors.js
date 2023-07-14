@@ -1,4 +1,4 @@
-import {createSelector} from "@reduxjs/toolkit";
+import {createSelector} from '@reduxjs/toolkit';
 
 const filmsSelectors = {
     getState:state => state.films,
@@ -6,14 +6,10 @@ const filmsSelectors = {
     getError:state => state.films.error,
     getStatus:state => state.films.status,
     getSelected:state => state.films.selected,
+    getSorted:state => state.films.sorted,
     getSortedByRate: () => createSelector(filmsSelectors.getAll,
-            films => films.sort((a,b) => a.vote_average - b.vote_average))
+            films => films.sort((a,b) => b.vote_average - a.vote_average))
 }
-
-//
-// export const getSortedByRate = createSelector(filmsSelectors.getAll, films => {
-//         return films.sort((a,b) => a.vote_average - b.vote_average)
-//     })
 
 
 export default filmsSelectors

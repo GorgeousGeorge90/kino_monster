@@ -1,1 +1,1 @@
-export const getNews = state => state.news.news
+export const getNews = state => state.news

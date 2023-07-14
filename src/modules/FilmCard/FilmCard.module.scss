@@ -1,18 +1,14 @@
 
 
 
-.container {
-  @apply flex flex-col gap-4 items-center my-10;
-
-  h2,h3 {
-    @apply font-sans-serif text-xl font-bold dark:text-neutral-300 first-letter:uppercase;
-  }
-
-  ul {
-    @apply grid grid-cols-2 grid-rows-2 gap-3;
-  }
+.film_card_container {
+  @apply flex flex-col gap-4 items-center mt-8;
 
   .rating_error {
-    @apply text-red-600 text-sm font-bold font-sans-serif;
+    @apply text-red-600 text-sm font-bold font-sans-serif animate-open;
+  }
+
+  .film_card_text {
+    @apply text-lg text-neutral-300;
   }
 }

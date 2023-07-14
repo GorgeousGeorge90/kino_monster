@@ -1,6 +1,4 @@
 import styles from './FilmData.module.scss';
-import {useDispatch} from "react-redux";
-import {clearData} from "../../store/searchSlice";
 
 
 
@@ -9,24 +7,19 @@ const FilmData = ({Title,Year,Poster, Metascore,imdbRating,
     Released,Genre,Director,Actors,Plot,
 }) => {
 
-    const dispatch = useDispatch()
-
-    return (<div className={styles.container}>
+    return (<div className={styles.film_data_container}>
         <div className={styles.film_data_content}>
             <header className={styles.film_data_header}>
                 <h3 className={styles.film_data_title}>{Title}</h3>
                 <p className={styles.film_data_year}>{Year}</p>
-                {/*<div className={styles.film_data_btn}>*/}
-                {/*    <button onClick={() => dispatch(clearData)}>Back</button>*/}
-                {/*</div>*/}
             </header>
             <aside className={styles.film_data_left}>
                 <div className={styles.film_data_poster}>
                     <img src={Poster} alt="poster"/>
                 </div>
                 <ul className={styles.film_data_scores}>
-                    <li>metascore:{Metascore}</li>
-                    <li>imdb:{imdbRating}</li>
+                    <li><b>metascore:</b> {Metascore}</li>
+                    <li><b>imdb:</b> {imdbRating}</li>
                 </ul>
             </aside>
             <main className={styles.film_data_main}>

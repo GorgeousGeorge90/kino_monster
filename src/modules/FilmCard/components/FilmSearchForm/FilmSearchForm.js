@@ -39,7 +39,7 @@ const FilmSearchForm = () => {
         <input type="text" placeholder='Film' {...title}/>
         <input type="text" placeholder='Year' {...year}/>
         <BaseButton children={<Search height='20px' width='20px' stroke={'white'}/>}/>
-        <BaseButton children={<Cancel height='20px' width='20px' fill={'grey'}/>}
+        <BaseButton children={<Cancel height='20px' width='20px' fill={'white'}/>}
                     handleClick={handleCancel}
         />
     </form>)

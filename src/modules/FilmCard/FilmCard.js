@@ -10,15 +10,13 @@ const FilmCard = () => {
     const {film,status,error} = useSelector(getSearch)
 
 
-    return (<section className={styles.container}>
-        <h2>get new film</h2>
+    return (<section className={styles.film_card_container}>
         <FilmSearchForm/>
         {
             error ? <span className={styles.rating_error}>{error}</span> : null
         }
-        <h3>film info</h3>
         {
-            !film ? <p>don't have any results</p>: status === 'pending' ? <Loader/>: <FilmData {...film}/>
+            !film ? <p className={styles.film_card_text}>don't have any requests</p>: status === 'pending' ? <Loader/>: <FilmData {...film}/>
         }
     </section>)
 }

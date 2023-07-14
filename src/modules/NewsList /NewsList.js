@@ -4,6 +4,7 @@ import {getNews} from './selectors/selectors';
 import NewsItem from './components/NewsItem/NewsItem';
 import {useEffect} from 'react';
 import styles from './NewsList.module.scss';
+import {ReactComponent as Spinner} from './../../assets/img/spinner.svg';
 
 
 const NewsList = () => {
@@ -11,18 +12,21 @@ const NewsList = () => {
     useEffect(()=> {
         dispatch(fetchNews())
     },[])
-    const news = useSelector(getNews)
+    const {news,status} = useSelector(getNews)
 
 
     return (<section className={styles.news_list_main}>
         <h2 className={styles.news_list_title}>here the news!</h2>
-        <ul className={styles.news_list_list}>
-            {
-                news.map(item => <NewsItem key={item.id}
-                                               {...item}
-                />)
-            }
-        </ul>
+        {
+            status === 'pending' ? <Spinner/> :
+                <ul className={styles.news_list_list}>
+                    {
+                        news.map(item => <NewsItem key={item.id}
+                                                   {...item}
+                        />)
+                    }
+                </ul>
+        }
         </section>)
 }
 

@@ -1,6 +1,6 @@
 
 
-.container {
+.film_item_container {
   @apply flex items-center justify-center gap-1.5 border-none  rounded-md p-2 dark:bg-neutral-500
     hover:bg-amber-800;
 
@@ -11,19 +11,15 @@
 
   }
 
-  .film_title_year {
+  .film_title_info {
     @apply font-sans-serif relative;
 
-    h3 {
+    .film_title_year {
       @apply font-bold text-xl;
-    }
-
-    p {
-
     }
   }
 
-  .btn {
+  .film_title_btn {
     @apply cursor-pointer absolute bottom-2 left-14;
 
   }

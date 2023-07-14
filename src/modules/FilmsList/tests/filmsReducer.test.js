@@ -2,13 +2,13 @@ import filmsReducer, {
     clearError,
     selectFilm,
     clearSelected,
-    fetchFilms
+    fetchFilms, sortedFilms
 } from '../store/filmsSlice';
 
 const initialState = {
     films: [
-        {id:'1', title:'Batman'},
-        {id:'2', title:'IronMan'},
+        {id:'1', title:'Batman', vote_average:3, release_date:"2023-05-03"},
+        {id:'2', title:'IronMan', vote_average:5, release_date:"2023-06-06"},
     ],
     status:'idle',
     error:'Error!',
@@ -78,5 +78,25 @@ describe('fetchFilms tests',()=> {
         const result = filmsReducer(initialState,action)
         expect(result.status).toBe('rejected')
         expect(result.error).toBe('Critical!')
+    })
+
+    it('goal:sorted data by vote average', ()=> {
+        const action = {
+            type:sortedFilms.type,
+            payload:'vote_average',
+        }
+
+        const result = filmsReducer(initialState,action)
+        console.log(result.sorted)
+    })
+
+    it('goal:sorted data by release date', ()=> {
+        const action = {
+            type:sortedFilms.type,
+            payload:'release_date',
+        }
+
+        const result = filmsReducer(initialState,action)
+        console.log(result.sorted)
     })
 })

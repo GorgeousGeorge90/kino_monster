@@ -32,6 +32,13 @@ const filmsSlice = createSlice({
         selectFilm:(state,action)=> {
             state.selected = state.films.find(film => film.id === action.payload)
         },
+        sortedFilms:(state,action)=> {
+            if (action.payload === 'vote_average') {
+                state.films.sort((a, b) => b.vote_average - a.vote_average)
+            } else if (action.payload === 'release_date') {
+                state.films.sort((a, b) => Date.parse(b.release_date) - Date.parse(a.release_date))
+            }
+        },
         clearSelected:(state)=> {
             state.selected = null
         },
@@ -58,5 +65,5 @@ const filmsSlice = createSlice({
     })
 })
 
-export const { clearError, selectFilm, clearSelected } = filmsSlice.actions
+export const { clearError, selectFilm, clearSelected, sortedFilms } = filmsSlice.actions
 export default filmsSlice.reducer

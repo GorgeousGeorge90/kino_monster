@@ -2,8 +2,9 @@ import filmsSelectors from '../selectors/selectors';
 
 const films = {
     films: [
-        {id:'1',title:'Batman', vote_average:6},
+        {id:'1',title:'Batman', vote_average:4},
         {id:'2',title:'IronMan', vote_average:5},
+        {id:'3',title:'IronMan2', vote_average:4.5},
     ],
     status:'idle',
     error:null,
@@ -20,7 +21,7 @@ describe('FilmsList selectors tests',()=> {
     it('goal: select films',()=> {
 
         const result = filmsSelectors.getAll({films})
-        expect(result).toHaveLength(2)
+        expect(result).toHaveLength(3)
         expect(result[0].title).toBe('Batman')
     })
 
@@ -46,6 +47,6 @@ describe('FilmsList selectors tests',()=> {
 
         const result = filmsSelectors.getSortedByRate()({films})
         expect(result[0].title).toBe('IronMan')
-        expect(result[1].title).toBe('Batman')
+        expect(result[1].title).toBe('IronMan2')
     })
 })

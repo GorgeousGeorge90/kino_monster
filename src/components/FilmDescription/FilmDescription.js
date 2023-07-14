@@ -1,4 +1,5 @@
 import styles from './FilmDescription.module.scss';
+import pic from './img/null.png';
 
 
 
@@ -21,7 +22,7 @@ const FilmDescription = ({
         </header>
         <main className={styles.film_desc_main}>
             <aside className={styles.film_desc_poster}>
-                <img src={`https://image.tmdb.org/t/p/original/${poster_path}`} alt="pic1"/>
+                <img src={poster_path ? `https://image.tmdb.org/t/p/original/${poster_path}`:pic} alt="pic1"/>
             </aside>
             <section className={styles.film_desc_info}>
                 <p>{overview}</p>

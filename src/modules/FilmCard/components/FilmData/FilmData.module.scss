@@ -1,7 +1,7 @@
 
 
 
-.container {
+.film_data_container {
   @apply flex items-center justify-center font-sans-serif;
 
   .film_data_content {
@@ -11,7 +11,7 @@
       @apply flex flex-col items-center col-span-full;
 
       .film_data_title {
-        @apply font-bold text-neutral-100 text-lg;
+        @apply font-bold text-neutral-100;
       }
 
       .film_data_year {
@@ -20,10 +20,10 @@
     }
 
     .film_data_left {
-      @apply flex flex-col items-start;
+      @apply flex flex-col items-start w-full;
 
       .film_data_scores {
-        @apply flex flex-col;
+        @apply flex gap-2 text-xs self-center text-neutral-300;
       }
 
       .film_data_poster {
