@@ -9,7 +9,7 @@ const LayoutElement = () => {
     return (<div className={'h-screen flex flex-col'}>
         <Header/>
 
-        <main className={'dark:bg-neutral-800 flex-grow'}>
+        <main className={'bg-secondary_light dark:bg-secondary_dark flex-grow'}>
             <div className={'mx-16'}>
                 <Outlet/>
             </div>

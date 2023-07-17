@@ -5,8 +5,8 @@ import CustomLink from "../../../UI/CustomLink/CustomLink";
 const Navbar = () => {
 
 
-    return (<nav className={styles.navbar}>
-            <ul>
+    return (<nav className={styles.navbar_container}>
+            <ul className={styles.navbar_list}>
                 <li><CustomLink to='/'>Films</CustomLink></li>
                 <li><CustomLink to='news'>News</CustomLink></li>
                 <li><CustomLink to='info'>Info</CustomLink></li>

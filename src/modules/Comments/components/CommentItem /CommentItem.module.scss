@@ -1,7 +1,7 @@
 
 
 .comment_item_container {
-  @apply flex items-center gap-2  dark:bg-gray-500 rounded-full pr-2 w-fit animate-open;
+  @apply flex items-center gap-2 bg-item_light  dark:bg-item_dark rounded-full pr-2 w-fit animate-open;
 
   .comment_item_avatar {
     @apply w-10 h-10;

@@ -10,9 +10,9 @@ const Header = () => {
             <div className={styles.header_logo}>
                 <img src={logo} alt="logo"/>
             </div>
-            <div className={styles.header_title}>
-                <h1>MovieMonster</h1>
-                <p>SPA about films</p>
+            <div className={styles.header_info}>
+                <h1 className={styles.header_info_title}>MovieMonster</h1>
+                <p className={styles.header_info_text}>SPA about films</p>
             </div>
             <div className={styles.header_nav}>
                 <Navbar/>

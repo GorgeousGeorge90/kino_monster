@@ -1,9 +1,9 @@
 
 
 .btn {
-  @apply flex gap-2.5 fill-neutral-300;
+  @apply flex gap-2.5 fill-icon_light dark:fill-icon_dark;
 
   span {
-    @apply uppercase text-neutral-300 font-black uppercase;
+    @apply uppercase text-neutral-200 font-black uppercase;
   }
 }

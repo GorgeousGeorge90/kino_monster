@@ -4,10 +4,10 @@
   @apply flex flex-col items-center font-sans-serif animate-open;
 
   .phrase_title {
-    @apply text-base dark:text-neutral-300 ;
+    @apply text-base text-neutral-100 dark:text-neutral-300 ;
   }
 
   .phrase_author {
-    @apply text-lg font-bold dark:text-neutral-200 ;
+    @apply text-lg font-bold text-neutral-100 dark:text-neutral-200 ;
   }
 }

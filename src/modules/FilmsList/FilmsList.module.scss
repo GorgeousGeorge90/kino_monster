@@ -4,7 +4,7 @@
   @apply flex flex-col flex-wrap items-center justify-center mx-16 mb-3 gap-2 font-sans-serif;
 
   .films_list_title {
-    @apply first-letter:uppercase font-bold text-xl dark:text-neutral-300 mt-2;
+    @apply first-letter:uppercase font-bold text-xl text-neutral-100 mt-2;
   }
 
   .films_list_list {

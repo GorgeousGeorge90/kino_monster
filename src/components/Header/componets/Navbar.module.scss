@@ -1,8 +1,12 @@
 
 
-.navbar {
+.navbar_container {
 
-  ul {
+  .navbar_list {
     @apply flex justify-evenly;
+
+    li {
+      @apply hover:scale-110;
+    }
   }
 }

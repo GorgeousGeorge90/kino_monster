@@ -2,6 +2,6 @@
 
 
 .btn {
-  @apply flex p-2 items-center justify-center dark:bg-neutral-500 rounded-md text-white hover:scale-105 text-sm;
+  @apply flex p-2 items-center justify-center bg-btn_light dark:bg-btn_dark rounded-md text-white hover:scale-105 text-sm;
 }
 

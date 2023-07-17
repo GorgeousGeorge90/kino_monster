@@ -1,0 +1,14 @@
+
+
+
+.news_list_main {
+  @apply font-sans-serif my-0;
+
+  .news_list_title {
+    @apply flex justify-center text-xl text-neutral-100 first-letter:uppercase py-2 font-bold;
+  }
+
+  .news_list_list {
+    @apply flex flex-col gap-5 animate-show_it;
+  }
+}

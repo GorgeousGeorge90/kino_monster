@@ -15,7 +15,7 @@
       }
 
       .film_data_year {
-        @apply  text-neutral-300 text-xs;
+        @apply  text-neutral-100 dark:text-neutral-300 text-xs;
       }
     }
 
@@ -23,7 +23,7 @@
       @apply flex flex-col items-start w-full;
 
       .film_data_scores {
-        @apply flex gap-2 text-xs self-center text-neutral-300;
+        @apply flex gap-2 text-xs self-center text-neutral-100 dark:text-neutral-300;
       }
 
       .film_data_poster {
@@ -37,10 +37,10 @@
     }
 
     .film_data_main {
-      @apply flex flex-col gap-3 font-sans-serif text-neutral-300 text-xs;
+      @apply flex flex-col gap-3 font-sans-serif text-neutral-100 dark:text-neutral-300 text-xs;
 
       .film_data_plot {
-        @apply text-neutral-300 text-xs;
+        @apply text-neutral-100 dark:text-neutral-300 text-xs;
       }
     }
   }

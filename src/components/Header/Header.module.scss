@@ -1,20 +1,20 @@
 
 .container {
   @apply flex flex-col justify-center items-center h-[120px] my-0
-   bg-gray-400 text-gray-900 dark:bg-neutral-900 z-10 sticky top-0;
+  bg-primary_light dark:bg-primary_dark z-10 sticky top-0;
 
   .header {
     @apply flex gap-10 w-full px-20;
 
-    .header_title {
-      @apply flex flex-col justify-center items-center font-sans-serif;
+    .header_info {
+      @apply flex flex-col justify-center items-center font-sans-serif text-title;
 
-      h1 {
-        @apply text-4xl font-bold tracking-wider dark:text-neutral-200;
+      .header_info_title {
+        @apply text-4xl font-bold tracking-wider text-title;
       }
 
-      p {
-        @apply dark:text-neutral-300 text-lg;
+      .header_info_text {
+        @apply text-text_light dark:text-text_dark text-lg;
       }
 
     }
@@ -23,7 +23,7 @@
       @apply grow self-end;
 
       a {
-        @apply dark:text-neutral-200 text-lg;
+        @apply text-lg;
       }
     }
 

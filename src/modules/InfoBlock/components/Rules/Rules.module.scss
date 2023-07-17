@@ -1,14 +1,14 @@
 
 
-.container {
+.rules_container {
   @apply flex flex-col items-center;
 
-  h2 {
+  .rules_title {
     @apply font-bold text-lg text-neutral-100 font-mono;
   }
 
   .rules_list {
-    @apply  text-neutral-400 font-sans-serif text-base;
+    @apply text-neutral-100 dark:text-neutral-400 font-sans-serif text-base;
   }
 
   .icon {

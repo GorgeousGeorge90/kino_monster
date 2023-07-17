@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="add page for current film">
-      <change afterPath="$PROJECT_DIR$/src/components/FilmDescription/img/null.png" afterDir="false" />
+    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="add sort buttons to films page and complete info page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/componets/Navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/componets/Navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Switcher/Switcher.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switcher/Switcher.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/Comments.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmData/FilmData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmData/FilmData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmData/FilmData.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmData/FilmData.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/selectors/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/tests/filmsReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/filmsReducer.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/selectors.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /NewsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /NewsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /selectors/selectors.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/InfoPage/InfoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage/InfoPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/LayoutElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/LayoutElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +231,7 @@
       <workItem from="1688983892969" duration="9408000" />
       <workItem from="1689090932316" duration="1991000" />
       <workItem from="1689161946431" duration="5477000" />
-      <workItem from="1689245315306" duration="23432000" />
+      <workItem from="1689245315306" duration="41207000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1685622428162</created>
@@ -311,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689270652306</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add sort buttons to films page and complete info page">
+      <created>1689374115675</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689374115675</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +345,7 @@
     <MESSAGE value="add filmsSlice &amp; tests cases" />
     <MESSAGE value="add tests cases for infoBlock" />
     <MESSAGE value="add page for current film" />
-    <option name="LAST_COMMIT_MESSAGE" value="add page for current film" />
+    <MESSAGE value="add sort buttons to films page and complete info page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sort buttons to films page and complete info page" />
   </component>
 </project>

@@ -5,7 +5,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'black',
+        primary_dark: '#171717',
+        primary_light: '#737373',
+        secondary_dark:'#262626',
+        secondary_light: '#a3a3a3',
+        item_dark:'#737373',
+        item_light:'#404040',
+        btn_dark:'#737373',
+        btn_light:'#262626',
+        border_dark: '#737373',
+        border_light: '#404040',
+        rate_light:'#262626',
+        rate_dark:'#525252',
+        title: '#f5f5f5',
+        text_dark: '#d4d4d4',
+        text_light: '#f5f5f5',
+        icon_dark: '#fef08a',
+        icon_light: '#facc15',
       },
       fontFamily: {
         'sans-serif': ['Alegreya Sans SC', 'sans-serif'],
