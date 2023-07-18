@@ -1,8 +1,8 @@
-import { getByRole, render, screen } from "@testing-library/react";
+import {
+    render,
+    screen
+} from "@testing-library/react";
 import CommentItem from "../components/CommentItem /CommentItem";
-import {useSelector} from "react-redux";
-import Comments from "../Comments";
-
 
 jest.mock('react-redux')
 
@@ -15,11 +15,9 @@ describe('Comments components tests',()=>{
             comment: 'Hi!'
         }
 
-        useSelector.mockReturnValue(data)
-
-        const component = render(<CommentItem {...data}/>)
+        render(<CommentItem {...data}/>)
         const item = screen.getByRole('listitem')
+        expect(item).toBeInTheDocument()
         expect(item).toHaveTextContent('Kate')
-        expect(component).toMatchSnapshot()
     })
 })

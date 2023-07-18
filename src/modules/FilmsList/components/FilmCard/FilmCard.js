@@ -4,6 +4,7 @@ import {useDispatch} from "react-redux";
 import {selectFilm} from "../../store/filmsSlice";
 import pic from './img/null.png';
 
+
 const FilmCard = ({id, title, poster_path, vote_average}) => {
     const dispatch = useDispatch()
 
@@ -11,8 +12,8 @@ const FilmCard = ({id, title, poster_path, vote_average}) => {
     return (<li className={styles.film_card_container}>
         <CustomLink to={`/${id}`}>
             <img className={styles.film_card_poster}
-                 src={ poster_path ? `https://image.tmdb.org/t/p/original/${poster_path}`:pic}
-                 alt="pic"
+                 src={`https://image.tmdb.org/t/p/original/${poster_path}`}
+                 alt={`${pic}`}
                  onClick={()=>dispatch(selectFilm(id))}
             />
         </CustomLink>

@@ -1,5 +1,6 @@
 import filmsApi from "../api/api";
 
+jest.mock('axios')
 
 describe('filmsApi tests',()=> {
     it('goal: fetch films',async ()=> {

@@ -12,20 +12,20 @@ const NewsList = () => {
     useEffect(()=> {
         dispatch(fetchNews())
     },[])
-    const {news,status} = useSelector(getNews)
+    const {news,status,error} = useSelector(getNews)
 
 
     return (<section className={styles.news_list_main}>
         <h2 className={styles.news_list_title}>here the news!</h2>
         {
-            status === 'pending' ? <Spinner/> :
-                <ul className={styles.news_list_list}>
-                    {
-                        news.map(item => <NewsItem key={item.id}
-                                                   {...item}
-                        />)
-                    }
-                </ul>
+         news ? status === 'pending' ? <Spinner/> :
+            <ul className={styles.news_list_list}>
+            {
+                news.map(item => <NewsItem key={item.id}
+                                           {...item}
+                />)
+            }
+        </ul>: <p className={styles.news_list_error}>{error}</p>
         }
         </section>)
 }

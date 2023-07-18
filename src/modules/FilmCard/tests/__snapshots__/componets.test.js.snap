@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="container"
+        class="film_data_container"
       >
         <div
           class="film_data_content"
@@ -14,21 +14,12 @@ Object {
           <header
             class="film_data_header"
           >
-            <h1>
-              title
-            </h1>
-            <div
+            <h3
+              class="film_data_title"
+            />
+            <p
               class="film_data_year"
-            >
-              year
-            </div>
-            <div
-              class="film_data_btn"
-            >
-              <button>
-                Back
-              </button>
-            </div>
+            />
           </header>
           <aside
             class="film_data_left"
@@ -38,59 +29,84 @@ Object {
             >
               <img
                 alt="poster"
-                src="poster"
               />
             </div>
             <ul
               class="film_data_scores"
             >
               <li>
-                metascore:
-                metascore
+                <b>
+                  metascore:
+                </b>
+                 
               </li>
               <li>
-                imdb:
-                rating
+                <b>
+                  imdb:
+                </b>
+                 
               </li>
             </ul>
           </aside>
-          <section>
-            <ul>
-              <li>
-                released:
-                released
-              </li>
-              <li>
-                genre:
-                genre
-              </li>
-              <li>
-                director:
-                director
-              </li>
-              <li>
-                actors:
-                actors
-              </li>
-              <li>
-                awards:
-                awards
-              </li>
-            </ul>
-          </section>
-          <article
-            class="film_data_plot"
+          <main
+            class="film_data_main"
           >
-            Plot:
-            plot
-          </article>
+            <section
+              class="film_data_plot"
+            >
+              <article>
+                <p>
+                  <b>
+                    Plot:
+                  </b>
+                   
+                </p>
+              </article>
+            </section>
+            <section>
+              <ul>
+                <li>
+                  <p>
+                    <b>
+                      released:
+                    </b>
+                     
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>
+                      genre:
+                    </b>
+                     
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>
+                      director:
+                    </b>
+                     
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>
+                      actors:
+                    </b>
+                     
+                  </p>
+                </li>
+              </ul>
+            </section>
+          </main>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="container"
+      class="film_data_container"
     >
       <div
         class="film_data_content"
@@ -98,21 +114,12 @@ Object {
         <header
           class="film_data_header"
         >
-          <h1>
-            title
-          </h1>
-          <div
+          <h3
+            class="film_data_title"
+          />
+          <p
             class="film_data_year"
-          >
-            year
-          </div>
-          <div
-            class="film_data_btn"
-          >
-            <button>
-              Back
-            </button>
-          </div>
+          />
         </header>
         <aside
           class="film_data_left"
@@ -122,52 +129,77 @@ Object {
           >
             <img
               alt="poster"
-              src="poster"
             />
           </div>
           <ul
             class="film_data_scores"
           >
             <li>
-              metascore:
-              metascore
+              <b>
+                metascore:
+              </b>
+               
             </li>
             <li>
-              imdb:
-              rating
+              <b>
+                imdb:
+              </b>
+               
             </li>
           </ul>
         </aside>
-        <section>
-          <ul>
-            <li>
-              released:
-              released
-            </li>
-            <li>
-              genre:
-              genre
-            </li>
-            <li>
-              director:
-              director
-            </li>
-            <li>
-              actors:
-              actors
-            </li>
-            <li>
-              awards:
-              awards
-            </li>
-          </ul>
-        </section>
-        <article
-          class="film_data_plot"
+        <main
+          class="film_data_main"
         >
-          Plot:
-          plot
-        </article>
+          <section
+            class="film_data_plot"
+          >
+            <article>
+              <p>
+                <b>
+                  Plot:
+                </b>
+                 
+              </p>
+            </article>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <p>
+                  <b>
+                    released:
+                  </b>
+                   
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>
+                    genre:
+                  </b>
+                   
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>
+                    director:
+                  </b>
+                   
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>
+                    actors:
+                  </b>
+                   
+                </p>
+              </li>
+            </ul>
+          </section>
+        </main>
       </div>
     </div>
   </div>,

@@ -1,5 +1,4 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
-import {delay} from "../../../utils/delay";
 import newsApi from "../api/api";
 
 
@@ -8,7 +7,6 @@ export const fetchNews = createAsyncThunk(
     async (_,{rejectWithValue})=> {
 
         try {
-            await delay(500)
             const response = await newsApi.getNews()
 
             return response

@@ -48,7 +48,7 @@ describe('test fetchFilm cases',()=> {
 
         const result = searchReducer(initialState,action)
         expect(result.status).toBe('fulfilled')
-        expect(result.films).toHaveLength(3)
+        expect(result.film.title).toBe('Title')
     })
 
     it('goal: change status to rejected and get error',()=> {
@@ -61,37 +61,5 @@ describe('test fetchFilm cases',()=> {
         const result = searchReducer(initialState,action)
         expect(result.status).toBe('rejected')
         expect(result.error).toBe('Error!')
-    })
-})
-
-describe('test getFilm cases',()=> {
-    it('goal: change status to pending',()=>{
-
-        const result = searchReducer(initialState,({type:getFilm.pending.type}))
-        expect(result.status).toBe('pending')
-    })
-
-    it('goal: change status to fulfilled and get film',()=> {
-
-        const action = {
-            type:getFilm.fulfilled.type,
-            payload:'Batman'
-        }
-
-        const result = searchReducer(initialState,action)
-        expect(result.status).toBe('fulfilled')
-        expect(result.currentFilm).toBe('Batman')
-    })
-
-    it('goal: change status to rejected and get error',()=> {
-
-        const action = {
-            type:getFilm.rejected.type,
-            payload:'Critical!',
-        }
-
-        const result = searchReducer(initialState,action)
-        expect(result.status).toBe('rejected')
-        expect(result.error).toBe('Critical!')
     })
 })

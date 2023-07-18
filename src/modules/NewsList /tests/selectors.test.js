@@ -13,6 +13,6 @@ describe('NewList selectors test',()=> {
     it('goal: select news',()=> {
 
         const result = getNews({news})
-        expect(result[0].title).toBe('Nice!')
+        expect(result.news[0].title).toBe('Nice!')
     })
 })

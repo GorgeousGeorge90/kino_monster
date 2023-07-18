@@ -11,4 +11,8 @@
   .news_list_list {
     @apply flex flex-col gap-5 animate-show_it;
   }
+
+  .news_list_error {
+    @apply text-red-600 text-xl;
+  }
 }

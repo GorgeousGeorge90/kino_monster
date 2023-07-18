@@ -12,14 +12,15 @@
 _Simple SPA about films:_
 - *includes three pages:* 
     * *[Films](#films);*
-    * *[News](./README.md/#news);*
-    * *[Info](./README.md/#info);*
+    * *[News](#news);*
+    * *[Info](#info);*
 - *__header__ for navigation and switch theme;*
 - *__footer__ for contacts;*
 
 ***
 
-#### <a name="films"></a>`Films`
+
+#### `Films`
  _This is default and main page at the same time,
  includes twenty films and options to sort it by rating and release date
  powered by __Movies API__.
@@ -45,11 +46,11 @@ _Simple SPA about films:_
 
 ### Tech Stack
 
-* HTML;
-* CSS/SCSS;
-* Tailwind CSS;
-* React JS;
-* Redux Toolkit;
+* [x] HTML;
+* [x] CSS/SCSS;
+* [x] Tailwind CSS;
+* [x] React JS;
+* [x] Redux Toolkit;
 
 ***
 

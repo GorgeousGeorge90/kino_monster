@@ -6,75 +6,46 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="container"
+        class="info_container"
       >
         <img
           alt="img"
+          class="info_pic"
           src="https://media.istockphoto.com/id/489833698/photo/two-lounge-chairs-under-tent-on-beach.jpg?s=612x612&w=0&k=20&c=df_6Jkb5YreyaAcGVbdcRrTP4dZ-opUrYWtgRC3eKKI="
         />
         <section
-          class="container"
+          class="rules_container"
         >
-          <h2>
+          <h2
+            class="rules_title"
+          >
             Rules
           </h2>
           <ul
             class="rules_list"
           >
             <li>
-              1.Don't be rude in comments!
+              1.don't be rude in comments!
             </li>
             <li>
-              2.Fill films inputs with correct data!
+              2.fill films inputs with correct data!
             </li>
             <li>
-              3.Have a nice day!
+              3.comments limit is 5!
+            </li>
+            <li>
+              3.have a nice day!
             </li>
           </ul>
         </section>
         <section
-          class="container"
+          class="phrase_container"
         >
-          <h2>
-            Contacts
-          </h2>
-          <ul>
-            <li>
-              <span
-                class="contacts_info"
-              >
-                Email:
-              </span>
-              <span
-                class="contacts_data"
-              >
-                Gambit47@yandex.ru
-              </span>
-            </li>
-            <li>
-              <span
-                class="contacts_info"
-              >
-                GitHub:
-              </span>
-              <span
-                class="contacts_data"
-              >
-                <a
-                  href="https://github.com/GorgeousGeorge90"
-                >
-                  https://github.com/GorgeousGeorge90
-                </a>
-              </span>
-            </li>
-          </ul>
-        </section>
-        <section
-          class="container"
-        >
-          <h2 />
+          <h2
+            class="phrase_title"
+          />
           <p
-            class="font-bold"
+            class="phrase_author"
           />
         </section>
       </div>
@@ -82,75 +53,46 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="container"
+      class="info_container"
     >
       <img
         alt="img"
+        class="info_pic"
         src="https://media.istockphoto.com/id/489833698/photo/two-lounge-chairs-under-tent-on-beach.jpg?s=612x612&w=0&k=20&c=df_6Jkb5YreyaAcGVbdcRrTP4dZ-opUrYWtgRC3eKKI="
       />
       <section
-        class="container"
+        class="rules_container"
       >
-        <h2>
+        <h2
+          class="rules_title"
+        >
           Rules
         </h2>
         <ul
           class="rules_list"
         >
           <li>
-            1.Don't be rude in comments!
+            1.don't be rude in comments!
           </li>
           <li>
-            2.Fill films inputs with correct data!
+            2.fill films inputs with correct data!
           </li>
           <li>
-            3.Have a nice day!
+            3.comments limit is 5!
+          </li>
+          <li>
+            3.have a nice day!
           </li>
         </ul>
       </section>
       <section
-        class="container"
+        class="phrase_container"
       >
-        <h2>
-          Contacts
-        </h2>
-        <ul>
-          <li>
-            <span
-              class="contacts_info"
-            >
-              Email:
-            </span>
-            <span
-              class="contacts_data"
-            >
-              Gambit47@yandex.ru
-            </span>
-          </li>
-          <li>
-            <span
-              class="contacts_info"
-            >
-              GitHub:
-            </span>
-            <span
-              class="contacts_data"
-            >
-              <a
-                href="https://github.com/GorgeousGeorge90"
-              >
-                https://github.com/GorgeousGeorge90
-              </a>
-            </span>
-          </li>
-        </ul>
-      </section>
-      <section
-        class="container"
-      >
-        <h2 />
+        <h2
+          class="phrase_title"
+        />
         <p
-          class="font-bold"
+          class="phrase_author"
         />
       </section>
     </div>
