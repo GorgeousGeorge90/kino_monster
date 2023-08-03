@@ -13,15 +13,15 @@ const FilmsList = () => {
     useEffect(()=> {
         dispatch(fetchFilms())
     },[])
-    const {films,status} = useSelector(filmsSelectors.getState)
+    const { films,status } = useSelector(filmsSelectors.getState)
 
 
     const sortByRating = () => {
-        dispatch(sortedFilms('vote_average'))
+        dispatch(sortedFilms('rating'))
     }
 
     const sortByDate = () => {
-        dispatch(sortedFilms('release_date'))
+        dispatch(sortedFilms('release'))
     }
 
     return (<main className={styles.films_list_container}>

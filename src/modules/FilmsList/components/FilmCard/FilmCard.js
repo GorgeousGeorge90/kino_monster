@@ -1,23 +1,22 @@
 import styles from './FilmCard.module.scss';
-import CustomLink from "../../../../UI/CustomLink/CustomLink";
-import {useDispatch} from "react-redux";
-import {selectFilm} from "../../store/filmsSlice";
-import pic from './img/null.png';
+import CustomLink from '../../../../UI/CustomLink/CustomLink';
+import { useDispatch } from 'react-redux';
+import { selectFilm } from '../../store/filmsSlice';
 
-
-const FilmCard = ({id, title, poster_path, vote_average}) => {
+const FilmCard = ({_id,rating,image}) => {
     const dispatch = useDispatch()
+    const rate = rating.substring(0,rating.length - 3)
 
 
     return (<li className={styles.film_card_container}>
-        <CustomLink to={`/${id}`}>
+        <CustomLink to={`/${_id}`}>
             <img className={styles.film_card_poster}
-                 src={`https://image.tmdb.org/t/p/original/${poster_path}`}
-                 alt={`${pic}`}
-                 onClick={()=>dispatch(selectFilm(id))}
+                 src={image}
+                 alt={'pic'}
+                 onClick={()=>dispatch(selectFilm(_id))}
             />
         </CustomLink>
-        <p className={styles.film_card_rate}>{vote_average}</p>
+        <p className={styles.film_card_rate}>{rate}</p>
     </li>)
 }
 

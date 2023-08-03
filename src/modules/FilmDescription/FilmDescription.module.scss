@@ -12,7 +12,7 @@
     @apply flex flex-col items-center;
 
     .film_desc_header_title {
-      @apply font-bold text-neutral-200 text-lg;
+      @apply font-bold text-neutral-200 text-base;
     }
 
     p {
@@ -21,18 +21,18 @@
   }
 
   .film_desc_main {
-    @apply grid grid-cols-2 gap-4 justify-items-center;
+    @apply grid grid-cols-2 gap-4 items-start;
 
     .film_desc_poster {
-      @apply flex gap-2 items-center;
+      @apply flex gap-2;
 
       img {
-        @apply object-cover rounded-xl w-64;
+        @apply object-cover rounded-md w-64;
       }
     }
 
     .film_desc_info {
-      @apply flex flex-col text-neutral-300 my-2;
+      @apply flex flex-col text-neutral-300;
 
       p {
         @apply text-xs;

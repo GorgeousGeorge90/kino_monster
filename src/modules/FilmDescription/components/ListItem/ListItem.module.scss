@@ -1,0 +1,9 @@
+
+
+.title_item {
+  @apply flex gap-1;
+
+  .film_item_list {
+    @apply flex text-xs gap-1;
+  }
+}

@@ -24,7 +24,8 @@ _Simple SPA about films:_
  _This is default and main page at the same time,
  includes twenty films and options to sort it by rating and release date
  powered by __Movies API__.
- You can click on film item and go to page with film description 
+
+ You can click on film item and go to page with film description (only in spanish)
  and opportunity to leave the comment!_
 
 ***

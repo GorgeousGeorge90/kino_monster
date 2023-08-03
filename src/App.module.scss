@@ -2,5 +2,7 @@
 
 
 .app {
-  @apply flex flex-col min-h-screen font-sans-serif w-[1100px] mx-auto;
+  @apply flex flex-col min-h-screen font-sans-serif mx-auto;
+  min-width: 600px;
+  max-width: 1100px;
 }     

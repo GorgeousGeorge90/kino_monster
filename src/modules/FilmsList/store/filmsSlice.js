@@ -1,6 +1,6 @@
-import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import filmsApi from '../api/api';
-import {delay} from '../../../utils/delay';
+import { delay } from '../../../utils/delay';
 
 
 export const fetchFilms = createAsyncThunk(
@@ -8,7 +8,7 @@ export const fetchFilms = createAsyncThunk(
     async (_,{rejectWithValue})=> {
         try {
             await delay(2000)
-            const response = await filmsApi.getFilms()
+            const response = await filmsApi.getFreshFilms()
 
             return response.results
         } catch (error) {
@@ -30,13 +30,14 @@ const filmsSlice = createSlice({
     initialState,
     reducers:{
         selectFilm:(state,action)=> {
-            state.selected = state.films.find(film => film.id === action.payload)
+            state.selected = state.films.find(film => film['_id'] === action.payload)
         },
         sortedFilms:(state,action)=> {
-            if (action.payload === 'vote_average') {
-                state.films.sort((a, b) => b.vote_average - a.vote_average)
-            } else if (action.payload === 'release_date') {
-                state.films.sort((a, b) => Date.parse(b.release_date) - Date.parse(a.release_date))
+            if (action.payload === 'rating') {
+                state.films.sort((a, b) => Number(b.rating.substring(0,b.rating.length-3))
+                    -  Number(a.rating.substring(0, a.rating.length-3)))
+            } else if (action.payload === 'release') {
+                state.films.sort((a, b) => Date.parse(b.release) - Date.parse(a.release))
             }
         },
         clearSelected:(state)=> {
@@ -54,7 +55,7 @@ const filmsSlice = createSlice({
             })
 
             .addCase(fetchFilms.fulfilled, (state,action)=> {
-                state.films = action.payload
+                state.films = action.payload.filter((item,i)=> i < 20)
                 state.status = 'fulfilled'
             })
 

@@ -1,4 +1,4 @@
-import FilmDescription from "../../components/FilmDescription/FilmDescription";
+import FilmDescription from "../../modules/FilmDescription/FilmDescription";
 import Comments from "../../modules/Comments/Comments";
 import {useSelector} from "react-redux";
 import filmsSelectors from "../../modules/FilmsList/selectors/selectors";
