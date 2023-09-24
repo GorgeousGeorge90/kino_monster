@@ -59,4 +59,4 @@ _Simple SPA about films:_
 ### Contacts
 
 For feedback:`Gambit47@yandex.ru`<br>
-Deployed:`https://posts-page-1.vercel.app/`
+Deployed:`https://kino-monster.vercel.app/`
