@@ -1,0 +1,8 @@
+
+.app {
+  @apply flex flex-col h-screen w-screen font-sans-serif mx-auto;
+
+  .app_main {
+    @apply flex justify-center items-start flex-grow bg-secondary_light dark:bg-secondary_dark;
+  }
+}
