@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   darkMode: ['class', '[theme="dark"]'],
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'xss':'470px',
+        'lg':'920px',
+      },
       colors: {
         primary_dark: '#171717',
         primary_light: '#737373',
@@ -53,7 +58,15 @@ module.exports = {
       }
     },
     plugins: [
-      require('@savvywombat/tailwindcss-grid-areas')
+      plugin(function({addComponents}) {
+        addComponents({
+          '.base_container': {
+            display:'flex',
+            alignItems:'center',
+            justifyContent:'center',
+          }
+        })
+      })
     ],
   }
 }

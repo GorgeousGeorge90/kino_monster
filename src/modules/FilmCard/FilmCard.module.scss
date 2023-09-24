@@ -2,13 +2,18 @@
 
 
 .film_card_container {
-  @apply flex flex-col gap-4 items-center mt-8;
+  @apply flex justify-center items-center scale-90 order-2
+  lg:scale-100 lg:order-1;
 
-  .rating_error {
-    @apply text-red-600 text-sm font-bold font-sans-serif animate-open;
-  }
+  .film_card_content {
+    @apply flex flex-col gap-4 items-center;
 
-  .film_card_text {
-    @apply text-lg text-neutral-100 dark:text-neutral-300;
+    .rating_error {
+      @apply text-red-600 text-sm font-bold font-sans-serif animate-open;
+    }
+
+    .film_card_text {
+      @apply text-lg text-neutral-100 dark:text-neutral-300;
+    }
   }
 }

@@ -1,0 +1,12 @@
+
+
+.info_page_container {
+  @apply flex items-start justify-center bg-secondary_light
+  dark:bg-secondary_dark w-full h-full;
+
+  .info_page_content {
+    @apply grid items-start
+    md:flex sm:gap-10 sm:px-10 sm:pt-5
+    lg:grid-cols-2 lg:grid;
+  }
+}

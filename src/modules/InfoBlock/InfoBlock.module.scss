@@ -2,9 +2,11 @@
 
 
 .info_container {
-  @apply flex flex-col gap-3 mt-10 items-center;
+  @apply hidden gap-3 items-center order-1
+  sm:flex sm:flex-col md:order-2;
 
   .info_pic {
-    @apply object-cover  h-48 w-96 rounded-xl
+    @apply object-cover h-32 w-64 rounded-xl hidden
+    lg:w-96 md:block;
   }
 }

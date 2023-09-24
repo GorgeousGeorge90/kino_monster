@@ -1,23 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="upd footer">
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmDescription/FilmDescription.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmDescription/components/ListItem/ListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/FilmDescription/components/ListItem/ListItem.module.scss" afterDir="false" />
+    <list default="true" id="8ed3bc28-f06d-4bfd-acda-a6aed79d95f7" name="Changes" comment="upd API for FilmList and FilmDescription">
+      <change afterPath="$PROJECT_DIR$/src/api/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentForm/CommentForm.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/services/services.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/Comments/types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmCard/tests/services.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmCard/types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/services/services.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/components.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/FilmsList/types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/components.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/InfoBlock/types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/components.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/services.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/NewsList /types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/CurrentFimPage/CurrentFilmPage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/FilmsPage/FilmsPage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/InfoPage/InfoPage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/hooks.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/services/services.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmDescription/FilmDescription.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmDescription/img/null.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/BaseButton/BaseButton.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/CustomLink/CustomLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/My project.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/main.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/componets/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/componets/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/componets/Navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/componets/Navbar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider/Slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Switcher/Switcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switcher/Switcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Switcher/Switcher.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Switcher/Switcher.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/Comments.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/Comments.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentForm/CommentForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/components/CommentForm/CommentForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /CommentItem.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /img/edit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /img/trash1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/selectors/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/store/commentsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/store/commentsSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/tests/commentsReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/tests/reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/tests/componets.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/tests/componets.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/Comments/tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/Comments/tests/selectors.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/FilmCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/services/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmData/FilmData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmData/FilmData.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmItem/FilmItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/components/FilmSearchForm/FilmSearchForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/selectors/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/store/searchSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/store/searchSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/tests/api.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/tests/asyncThunk.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/tests/componets.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/tests/componets.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/tests/reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/tests/reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmCard/tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmCard/tests/selectors.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmDescription/FilmDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmDescription/FilmDescription.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmDescription/FilmDescription.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmDescription/components/ListItem/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmDescription/components/ListItem/ListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmDescription/components/ListItem/ListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmDescription/components/ListItem/ListItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/FilmsList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CurrentFimPage/CurrentFilmPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CurrentFimPage/CurrentFilmPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/api/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/components/Film/Film.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/FilmCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/components/Film/Film.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard/img/null.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/components/Film/img/null.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/selectors/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/store/filmsSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/services.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/tests/reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/FilmsList/tests/selectors.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/FilmsList/tests/thunks.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/InfoBlock.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/services/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Contacts/Contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Phrase/Phrase.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/components/Rules/Rules.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/selectors/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/store/infoSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/store/infoSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/tests/api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/services.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/tests/asyncThunk.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/tests/components.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/tests/infoReducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/InfoBlock/tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/InfoBlock/tests/selectors.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /NewsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /NewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /NewsList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /NewsList.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /services/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /components/NewsItem/NewsItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /components/NewsItem/NewsItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /components/NewsItem/NewsItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /components/NewsItem/NewsItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /selectors/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /selectors/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /store/newsSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /store/newsSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /tests/components.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /tests/reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/NewsList /tests/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/NewsList /tests/selectors.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CurrentFimPage/CurrentFilmPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CurrentFimPage/CurrentFilmPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FilmsPage/FilmsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FilmsPage/FilmsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/InfoPage/InfoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/InfoPage/InfoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NewsPage/NewsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewsPage/NewsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/LayoutElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/LayoutElement.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/delay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +132,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
         <option value="SCSS File" />
       </list>
     </option>
@@ -73,81 +178,79 @@
       <recent name="$PROJECT_DIR$/src/modules/Comments/components/CommentItem /img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/modules" />
       <recent name="$PROJECT_DIR$/src/modules/FilmsList/components/FilmCard" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/components/Footer/img" />
-      <recent name="$PROJECT_DIR$/src/modules/FilmsRating/components" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.filmsApi tests.goalL get new films">
-    <configuration name="FilmList.goal: render FilmCard" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.infoReducer tests">
+    <configuration name="InfoServices test.goal: success fetch" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/modules/FilmsList/tests/components.test.js" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/services.test.ts" />
       <test-names>
-        <test-name value="FilmList" />
-        <test-name value="goal: render FilmCard" />
+        <test-name value="InfoServices test" />
+        <test-name value="goal: success fetch" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="filmsApi tests.goalL get new films" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="infoApi tests.goal: get text" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/services.test.ts" />
       <test-names>
-        <test-name value="filmsApi tests" />
-        <test-name value="goalL get new films" />
+        <test-name value="infoApi tests" />
+        <test-name value="goal: get text" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="filmsApi tests.goal: fetch current" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="infoBlock selectors tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/selectors.test.ts" />
       <test-names>
-        <test-name value="filmsApi tests" />
-        <test-name value="goal: fetch current" />
+        <test-name value="infoBlock selectors tests" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="filmsApi tests.goal: fetch films" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="infoReducer tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/reducer.test.ts" />
       <test-names>
-        <test-name value="filmsApi tests" />
-        <test-name value="goal: fetch films" />
+        <test-name value="infoReducer tests" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="filmsApi tests.goal: get film" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="render tests for InfoBlock.goal: render Phrase component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/modules/FilmsList/tests/api.test.js" />
+      <test-file value="$PROJECT_DIR$/src/modules/InfoBlock/tests/components.test.tsx" />
       <test-names>
-        <test-name value="filmsApi tests" />
-        <test-name value="goal: get film" />
+        <test-name value="render tests for InfoBlock" />
+        <test-name value="goal: render Phrase component" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -166,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.filmsApi tests.goalL get new films" />
-        <item itemvalue="Jest.filmsApi tests.goal: get film" />
-        <item itemvalue="Jest.filmsApi tests.goal: fetch films" />
-        <item itemvalue="Jest.filmsApi tests.goal: fetch current" />
-        <item itemvalue="Jest.FilmList.goal: render FilmCard" />
+        <item itemvalue="Jest.infoReducer tests" />
+        <item itemvalue="Jest.render tests for InfoBlock.goal: render Phrase component" />
+        <item itemvalue="Jest.InfoServices test.goal: success fetch" />
+        <item itemvalue="Jest.infoApi tests.goal: get text" />
+        <item itemvalue="Jest.infoBlock selectors tests" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +330,11 @@
       <workItem from="1689683622119" duration="1977000" />
       <workItem from="1690989762068" duration="716000" />
       <workItem from="1691049971629" duration="33000" />
-      <workItem from="1691052240470" duration="16928000" />
+      <workItem from="1691052240470" duration="17480000" />
+      <workItem from="1694986729822" duration="119000" />
+      <workItem from="1695200300521" duration="96762000" />
+      <workItem from="1695586320841" duration="3130000" />
+      <workItem from="1695589654855" duration="925000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1685622428162</created>
@@ -334,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689687668647</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="upd API for FilmList and FilmDescription">
+      <created>1691080884710</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1691080884710</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,6 +480,7 @@
     <MESSAGE value="add light theme" />
     <MESSAGE value="upd README and tests" />
     <MESSAGE value="upd footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd footer" />
+    <MESSAGE value="upd API for FilmList and FilmDescription" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd API for FilmList and FilmDescription" />
   </component>
 </project>

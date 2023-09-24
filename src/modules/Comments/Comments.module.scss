@@ -1,21 +1,23 @@
 
 
 .comments_container {
-  @apply flex flex-col gap-2 items-center p-5;
+  @apply flex gap-2 items-center justify-start p-5;
 
-  .comments_title {
-    @apply font-bold first-letter:uppercase text-neutral-100 text-lg;
-  }
+  .comments_content {
+    @apply flex flex-col font-bold text-neutral-100 text-sm;
+    max-width: 600px;
 
-  .comments_list {
-    @apply flex flex-col gap-3;
-  }
+    .comments_list {
+      @apply flex flex-col gap-3 items-start flex-grow;
 
-  .comments_null {
-    @apply flex flex-col items-center text-neutral-100 text-lg cursor-pointer animate-open
-    hover:before:content-[attr(data-hover)] hover:text-neutral-100 hover:text-sm;}
+      .comments_list_item {
+        @apply flex gap-2 items-center italic animate-show_it transition;
 
-  .comments_limit {
-    @apply first-letter:uppercase text-red-600 animate-open;
+        .comments_list_item_logo {
+          @apply w-10 border-2 border-secondary_dark rounded-full
+          dark:border-secondary_light;
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,41 @@
+
+
+
+.film_desc_container {
+  @apply flex items-center justify-items-center rounded-xl scale-90 px-10
+  xss:scale-100 xss:py-5;
+  max-width: 800px;
+
+  .film_desc_content {
+    @apply flex flex-col gap-4 items-center justify-items-center;
+  }
+
+  .film_desc_header {
+    @apply flex flex-col items-center;
+
+    .film_desc_header_title {
+      @apply font-bold text-neutral-200 text-base;
+    }
+
+    .film_desc_header_release {
+      @apply text-xs text-neutral-300 font-semibold;
+    }
+  }
+
+  .film_desc_main {
+    @apply flex gap-4 items-start;
+
+    .film_desc_main_poster {
+      @apply object-cover rounded-md h-64 border-2 border-secondary_dark dark:border-secondary_light
+      dark:border-secondary_light;
+    }
+
+    .film_desc_main_info {
+      @apply flex flex-col text-neutral-300 font-semibold text-xs;
+
+      .film_desc_main_info_desc {
+        @apply font-normal;
+      }
+    }
+  }
+}

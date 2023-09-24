@@ -2,17 +2,24 @@
 
 
 .footer_container {
-  @apply flex items-center justify-center bg-secondary_light dark:bg-secondary_dark h-[70px];
+  @apply flex items-center justify-center bg-secondary_light dark:bg-secondary_dark;
+  min-height: 50px;
 
-  .footer {
-    @apply grid grid-cols-[repeat(3,50px)_250px] gap-2 items-center justify-center font-sans-serif;
+  .footer_content {
+    @apply flex gap-2 items-center justify-center font-sans-serif px-16 scale-75
+    sm:scale-100;
 
-    .footer_icon {
-      @apply cursor-pointer hover:fill-amber-200 fill-neutral-100;
+
+    .footer_link {
+      @apply self-center place-self-center;
+
+      .footer_link_icon {
+        @apply cursor-pointer;
+      }
     }
 
-    .footer_icon_it {
-      @apply cursor-pointer hover:fill-amber-200 fill-neutral-100 scale-125;
+    .footer_info {
+      @apply text-neutral-300 italic;
     }
   }
 }

@@ -49,6 +49,7 @@ _Simple SPA about films:_
 
 * [x] HTML;
 * [x] CSS/SCSS;
+* [x] TypeScript
 * [x] Tailwind CSS;
 * [x] React JS;
 * [x] Redux Toolkit;

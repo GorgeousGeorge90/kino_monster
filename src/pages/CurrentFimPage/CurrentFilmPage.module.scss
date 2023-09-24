@@ -1,0 +1,16 @@
+
+
+
+
+.current_container {
+  @apply flex items-start justify-center bg-secondary_light dark:bg-secondary_dark
+  w-full min-h-full;
+
+  .current_content {
+    @apply flex flex-col justify-center my-auto py-2 mx-24 my-5;
+
+    .current_comments {
+      @apply flex flex-col items-start gap-4;
+    }
+  }
+}

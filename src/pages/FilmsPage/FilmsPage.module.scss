@@ -1,0 +1,21 @@
+
+
+.films_page_container {
+  @apply flex items-start justify-center px-16 w-full min-h-full
+  bg-secondary_light dark:bg-secondary_dark;
+
+  .films_page_content {
+    @apply flex flex-col items-center gap-4;
+
+    .films_page_title {
+      @apply first-letter:uppercase font-bold text-neutral-100 mt-2
+      sm:text-lg;
+    }
+
+    .films_page_buttons {
+      @apply flex gap-4 scale-90
+      sm:scale-100;
+
+    }
+  }
+}

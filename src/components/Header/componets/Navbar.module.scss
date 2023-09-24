@@ -1,12 +1,17 @@
 
 
 .navbar_container {
+  @apply grow self-end scale-75
+  md:scale-100;
 
   .navbar_list {
     @apply flex justify-evenly;
 
-    li {
-      @apply hover:scale-110;
+    .navbar_list_item {
+
+      &:hover {
+        @apply animate-pulse scale-110 transition-all;
+      }
     }
   }
 }

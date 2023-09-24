@@ -1,18 +1,20 @@
 
 
 
-.news_list_main {
-  @apply font-sans-serif my-0;
+.news_list_container{
+  @apply flex items-start justify-center font-sans-serif my-0 bg-secondary_light w-full min-h-full
+  dark:bg-secondary_dark;
 
-  .news_list_title {
-    @apply flex justify-center text-xl text-neutral-100 first-letter:uppercase py-2 font-bold;
+  .news_list_content {
+    @apply flex flex-col px-10 items-center md:gap-4 gap-2 py-4 text-neutral-100;
+
+    .news_list_title {
+      @apply capitalize font-bold justify-center md:text-lg;
+    }
+
+    .news_list_list {
+      @apply flex flex-col gap-5 animate-show_it;
+    }
   }
 
-  .news_list_list {
-    @apply flex flex-col gap-5 animate-show_it;
-  }
-
-  .news_list_error {
-    @apply text-red-600 text-xl;
-  }
 }

@@ -1,9 +1,21 @@
 
 
-.search_form {
-  @apply flex gap-2 p-3 border-none rounded-md bg-neutral-500 dark:bg-neutral-700 h-14;
+.search_form_container {
+  @apply flex items-center justify-center p-3 bg-primary_light
+  dark:bg-primary_dark rounded-lg;
 
-  input {
-    @apply p-1 border-none rounded-md text-black dark:bg-neutral-200 text-xs;
+  .search_form_content {
+    @apply flex gap-2;
+
+    .search_form_input {
+      @apply rounded-md p-1 text-sm px-2
+      placeholder:text-sm placeholder:p-1;
+      min-width: 100px;
+      max-width: 150px;
+
+      &:focus {
+        @apply bg-neutral-400 text-neutral-50 placeholder:text-neutral-50;
+      }
+    }
   }
 }
